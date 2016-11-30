@@ -1,0 +1,33 @@
+<html ng-app="myApp">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="js/backend.js"></script>
+		<title>
+			http call
+		</title>
+	</head>
+	<body>
+		<div ng-controller="myCtrl">
+		
+			 
+			  
+		  <table>
+		<!-- defining table header-->
+			<th>Employee number</th>
+			<th>Employee name</th>
+			<th>Employee experience</th>
+			<th>Employee designation</th>
+			<th>Employee date of joining</th>
+
+		<!-- defining table body-->
+			<tr ng-repeat="x in myData">
+			<td>{{x.ENO}}</td>
+			<td>{{x.EName}}</td>
+			<td>{{x.Experience}}</td>
+			<td>{{x.designation}}</td>
+			<td>{{x.Dateofjoining}}</td>
+			</tr>			
+		</table>
+
+	</body>
+</html>
