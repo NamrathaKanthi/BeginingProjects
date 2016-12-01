@@ -1,0 +1,45 @@
+<html ng-app="myHttp">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="js/backend.js"></script>
+		<title>
+			http call
+		</title>
+	</head>
+	<body>
+		<div ng-controller="myCtrlService">
+		
+			 
+			  
+		  <table>
+		<!-- defining table header-->
+			<th>EmployeeNumber</th>
+			<th>EmployeeName</th>
+			
+
+		<!-- defining table body-->
+			<tr ng-repeat="x in Details" ng-click="game(x)">
+			<td>{{x.ENO}}</td>
+			<td>{{x.EName}}</td>
+			<td><my-directive-service  data='somedata' ng-click='remove(x)'></my-directive-service></td>
+			
+			</tr>			
+		</table>
+		</div>
+		<div ng-controller="myCntrl">
+		 <table>
+		<!-- defining table header-->
+			<th>EmployeeNumber</th>
+			<th>EmployeeMobile</th>
+			
+
+		<!-- defining table body-->
+			<tr ng-repeat="x in Mobile" ng-click="game(x)">
+			<td>{{x.ENO}}</td>
+			<td>{{x.Mobile}}</td>
+			<td><my-directive-service data='somedata' ng-click='remove(x)'></my-directive-service></td>
+			</tr>			
+		</table>
+	</div>
+	</body>
+</html>
