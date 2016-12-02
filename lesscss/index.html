@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="lessApp">
+	<head>
+		<title>using less</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+			<script type="text/javascript" src="js/less.js"></script>
+			<style>
+			@import url("css/custom.css");
+		</style>
+	</head>
+	<body ng-controller="lesscntrl">
+		<input type="button" value="Show Error Row" style="margin-top:30px;">
+		<input type="button" value="Toggle Processing icon" style="margin-top:30px;">
+		<input type="button" value="Toggle Sorting Of Last column" style="margin-top:30px;">
+		<my-directive></my-directive>
+	</body>
+</html>

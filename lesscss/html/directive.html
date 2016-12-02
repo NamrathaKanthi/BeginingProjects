@@ -1,0 +1,32 @@
+<div>
+<table class="table table-bordered table-responsive" style="margin-top:30px;">
+			<th style="background-color:SpringGreen"><button style="width:240px;background-color:transparent;border:none">S.No</button></th>
+			<th style="background-color:SpringGreen"><button style="width:240px;background-color:transparent;border:none;">Number</button></th>
+			<th style="background-color:SpringGreen"><button style="width:240px;background-color:transparent;border:none;">Animal</button></th>
+			<th style="background-color:SpringGreen"><button style="width:240px;background-color:transparent;border:none;">Site</button></th>
+			<tr>
+				<td><input type="text" style="width:180px;"></td>
+				<td><input type="text" style="width:180px;"></td>
+				<td><input type="text" style="width:180px;"></td>
+				<td><input type="text" style="width:180px;"></td>
+			</tr>
+			<tr ng-repeat="details in lessDetails| orderBy:'Animal'">
+				<td style="text-align:center;">
+					{{details.SNO}}
+				</td>
+				<td style="text-align:center;">
+					{{details.NO}}
+				</td>
+				<td style="text-align:center">
+					{{details.Animal}}
+				</td>
+				<td style="text-align:center">
+					{{details.site}}
+				</td>
+			</tr>
+			<th style="background-color:SpringGreen;text-align:center;">S.No</th>
+			<th style="background-color:SpringGreen;text-align:center;">Number</th>
+			<th style="background-color:SpringGreen;text-align:center;">Animal</th>
+			<th style="background-color:SpringGreen;text-align:center;">Site</th>
+</table>
+</div>
