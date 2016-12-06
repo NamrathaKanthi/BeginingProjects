@@ -1,0 +1,36 @@
+
+    {
+      "Name": "Namratha Kanthi",
+      "Mobile": "703124927",
+      "Mailid": "namratha.k7@gmail.com",
+	  "Skypeid":"namratha kanthi",
+	  "careerobjective":"To work in a firm with a professional work driven environment where I can utilize and apply my knowledge skills which would enable me as a fresher to grow while fulfilling institutional needs",
+      "EducationalQualification": [
+        {
+          "Qualification": "B.tech",
+          "College": "Sri sai jyothi",
+          "Percentage": "80%",
+		  "YearOFPassing":"2016"
+        },
+        {
+          "Qualification": "Intermediate",
+          "College": "Narayana Junior college",
+          "Percentage": "96%",
+		  "YearOFPassing":"2012"
+        },
+        {
+          "Qualification": "S.S.C",
+          "College": "The Indo English High School",
+          "Percentage": "90%",
+		  "YearOFPassing":"2010"
+        }
+      ],
+	  "SoftSkills":"English",
+	  "TechnicalSkills":"C,HTML,Java,CSS,Angular,Javascript,Jquery",
+	  "Strengths":"Work with positive attitude to contribute healthy functioning of the organization,Self Confidence and great patience,Analyzing every angle of a project before working on it,Willingness to learn,Adjustment  in any kind of environment",
+      "Fathername": "K.Gopal",
+      "Mothername": "K.Santhoshi",
+      "DOB": "07-05-1995",
+      "Gender": "Female",
+      "Nationality": "Indian"
+    }

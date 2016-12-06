@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="myResume">
+<head>
+	<title>Static Resume</title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="js/resume.js"></script>
+		<style>
+			@import url("css/materialize.css");
+			@import url("css/materialize.min.css");
+		</style>
+</head>
+<body>
+	<div ng-controller="myResumeCntrl">
+		<div class="row" style="color: black;">
+			<div class="col-md-offset-1 col-md-2 col-sm-12"><img src="../images/1.jpg" style="height:250px;width:175px;margin-top: 20px;">
+			</div>
+				<div class="col-md-4 col-sm-12" style="margin-left:150px;margin-top:50px;">
+					<div style="text-align:center;font-size:30px;color:Gray;"><strong>{{myData.Name}}</strong></div>
+					<div><p style="text-align: center;color:Gray;">Web Desingner/Developer</p>
+						<div style="text-align:center;margin-top:20px;"><span class="glyphicon glyphicon-phone"></span><span style="margin-left:10px;color:Gray;" >{{myData.Mobile}}</span></div>
+						<div style="text-align:center;margin-top:10px;"><span ><i class="fa fa-envelope-open" aria-hidden="true"></i></span><span style="margin-left:10px;color:Gray;" >{{myData.Mailid}}</span></div>
+						<div style="text-align:center;margin-top:10px;"><span >
+						<i class="fa fa-skype" aria-hidden="true"></i></span><span style="margin-left:10px;color:Gray;">{{myData.Skypeid}}</span>
+						</div>
+					</div>
+				</div>
+	<div class="row" style="margin-top:50px;">
+		<div class="col-md-offset-1 col-md-11 col-sm-12">
+			<div class="panel panel-info class">
+			    <div class="panel-heading">Career Objective</div>
+			    <div class="panel-body" style="color:Gray;">{{myData.careerobjective}}</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px;">
+		<div class="col-md-offset-1 col-md-11 col-sm-12">
+			<div class="panel panel-info class">
+			    <div class="panel-heading">Educational Details</div>
+			    <div class="panel-body">
+			    <table>
+			    	<tbody>
+			    		<tr ng-repeat="details in myData.EducationalQualification" style="color:Gray;">
+			    			<td>
+			    				{{details.Qualification}}
+			    			</td>
+			    			<td>
+			    				{{details.College}}
+			    			</td>
+			    			<td>
+			    				{{details.Percentage}}
+			    			</td>
+			    			<td>
+			    				{{details.YearOFPassing}}
+			    			</td>
+			    		</tr>
+			    	</tbody>
+			    </table>
+			   </div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px;">
+		<div class="col-md-offset-1 col-md-11 col-sm-12">
+			<div class="panel panel-info class">
+			    <div class="panel-heading">Strength</div>
+			    <div class="panel-body" style="color:Gray;">{{myData.Strengths}}</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px;">
+		<div class="col-md-offset-1 col-md-11 col-sm-12">
+			<div class="panel panel-info class">
+			    <div class="panel-heading">Technical Skills</div>
+			    <div class="panel-body" style="color:Gray;">{{myData.TechnicalSkills}}</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px;">
+		<div class="col-md-offset-1 col-md-11 col-sm-12">
+			<div class="panel panel-info class">
+			    <div class="panel-heading">Personal Details</div>
+			    <div class="panel-body" style="color:Gray;">
+			    	Father's name: {{myData.Fathername}}<br>
+			    	Mother's name: {{myData.Mothername}}<br>
+			    	Date of Birth: {{myData.DOB}}<br>
+			    	Gender: {{myData.Gender}}<br>
+			    	Nationality: {{myData.Nationality}}<br>
+			    </div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div style="margin-left:720px;color:Gray;"><h5>Namratha Kanthi</h5></div>
+</body>
+</html>
