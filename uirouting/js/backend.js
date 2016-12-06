@@ -20,7 +20,7 @@ var app=angular.module('myHtmlApp',["ui.router"]);
 				templateUrl:"html/homepage.html"
 			})
 			.state('first',{
-				url:'/',
+				url:'/first',
 				templateUrl:"html/first.html"
 			})
 			.state('second',{
