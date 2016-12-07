@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="promisesApp">
+<head>
+	<title>Promises</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="js/promise.js"></script>
+</head>
+<body>
+<div ng-controller="myPromisecontroller">
+	<table>
+				<tr>
+					<td>NAME</td>
+					<td>Mobile</td>
+				</tr>
+				<tr ng-repeat="x in details.EmployeeList" >
+					
+					<td>{{x.ENO}}</td>
+					<td>{{x.Mobile}}</td>
+				</tr>
+			</table>
+</div>
+</body>
+</html>
