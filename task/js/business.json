@@ -1,0 +1,392 @@
+{
+  "business": [
+    {
+      "businessNum": 12838,
+      "businessDesc": "All'Onda",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 12839,
+      "businessDesc": "Almond - TriBeCa",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 12840,
+      "businessDesc": "Asia de Cuba - East Village",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 2891,
+      "businessDesc": "Asia de Cuba - SOBE",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 459,
+      "businessDesc": "Asia de Cuba- Los Angeles",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 451,
+      "businessDesc": "Asia de Cuba- New York",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 569,
+      "businessDesc": "Asia de Cuba- San Francisco",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 461,
+      "businessDesc": "Blue Door",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 2181,
+      "businessDesc": "Borough Food & Drink",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 568,
+      "businessDesc": "CGM-Hudson",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1345,
+      "businessDesc": "Caviar and Banana",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1303,
+      "businessDesc": "China Grill Chicago",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 456,
+      "businessDesc": "China Grill- Las Vegas",
+      "weekStart": "MON",
+      "currency": "~^8377;"
+    },
+    {
+      "businessNum": 464,
+      "businessDesc": "China Grill- Miami",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 453,
+      "businessDesc": "China Grill- New York",
+      "weekStart": "MON",
+      "currency": "~^3647;"
+    },
+    {
+      "businessNum": 2493,
+      "businessDesc": "China Grill-Ft. Lauderdale",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1043,
+      "businessDesc": "China Grill-Mexico City",
+      "weekStart": "MON",
+      "currency": "mex$",
+      "remap": "20100301"
+    },
+    {
+      "businessNum": 460,
+      "businessDesc": "Clift Hotel",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 2462,
+      "businessDesc": "Empire Food",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 463,
+      "businessDesc": "English is Italian",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 3917,
+      "businessDesc": "Eventi Hotel",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1186,
+      "businessDesc": "Gansevoort Hotel",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 450,
+      "businessDesc": "Hudson Hotel",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 5366,
+      "businessDesc": "Kutsher's Tribeca",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1449,
+      "businessDesc": "Mix Las Vegas",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1054,
+      "businessDesc": "Mix NYC",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 2032,
+      "businessDesc": "Mondrian Scottsdale AZ",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 5031,
+      "businessDesc": "Public House Chicago",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1347,
+      "businessDesc": "Red Square Atlantic City",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 455,
+      "businessDesc": "Red Square- Las Vegas",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 465,
+      "businessDesc": "Red, White & Blue",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1038,
+      "businessDesc": "Rocco's Italian American",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 457,
+      "businessDesc": "Rock Lobster",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1892,
+      "businessDesc": "Sanderson",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1706,
+      "businessDesc": "Social Hollywood",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1682,
+      "businessDesc": "Social at The Sagamore Hotel",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 1893,
+      "businessDesc": "St. Martins Lane",
+      "weekStart": "MON",
+      "currency": "~^163;"
+    },
+    {
+      "businessNum": 1910,
+      "businessDesc": "The Kobe Club",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 462,
+      "businessDesc": "Tuscan Steak- Miami",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 2055,
+      "businessDesc": "Wild Salmon",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 7493,
+      "businessDesc": "Yotel",
+      "weekStart": "MON",
+      "currency": "$"
+    },
+    {
+      "businessNum": 458,
+      "businessDesc": "rumjungle",
+      "weekStart": "MON",
+      "currency": "$"
+    }
+  ],
+  "attributeTypes": [
+    {
+      "attributeTypeId": "GAT40",
+      "attributeTypeDesc": "All CGM",
+      "attribute": [
+        {
+          "attributeId": "GTT107",
+          "attributeDesc": "CGM",
+          "businessList": [
+            451,
+            453,
+            455,
+            456,
+            457,
+            458
+          ]
+        },
+        {
+          "attributeId": "GTT108",
+          "attributeDesc": "ISH",
+          "businessList": [
+            450,
+            460
+          ]
+        }
+      ]
+    },
+    {
+      "attributeTypeId": "GAT27",
+      "attributeTypeDesc": "Currency",
+      "attribute": [
+        {
+          "attributeId": "GTT63",
+          "attributeDesc": "Peso",
+          "businessList": [
+            1043
+          ]
+        },
+        {
+          "attributeId": "GTT60",
+          "attributeDesc": "US Dollar",
+          "businessList": [
+            450,
+            451,
+            453,
+            455,
+            456,
+            457
+          ]
+        }
+      ]
+    },
+    {
+      "attributeTypeId": "GAT26",
+      "attributeTypeDesc": "FREE OR JV",
+      "attribute": [
+        {
+          "attributeId": "GTT57",
+          "attributeDesc": "FREESTANDING",
+          "businessList": [
+            453,
+            455,
+            456,
+            458,
+            462,
+            463,
+            464,
+            465,
+            1038,
+            1054,
+            1682,
+            1706
+          ]
+        }
+      ]
+    }
+  ],
+  "tagTypes": [
+    {
+      "tagTypeId": "BAT40",
+      "tagTypeDesc": "All CGM",
+      "tag": [
+        {
+          "tagId": "ATT107",
+          "tagDesc": "CGM",
+          "businessList": [
+            451,
+            453,
+            455,
+            456,
+            457,
+            458,
+            459,
+            461,
+            462
+          ]
+        },
+        {
+          "tagId": "ATT108",
+          "tagDesc": "ISH",
+          "businessList": [
+            450,
+            460
+          ]
+        }
+      ]
+    },
+    {
+      "tagTypeId": "BAT24",
+      "tagTypeDesc": "CONCEPT",
+      "tag": [
+        {
+          "tagId": "ATT52",
+          "tagDesc": "Asia de Cuba",
+          "businessList": [
+            451,
+            459,
+            569
+          ]
+        },
+        {
+          "tagId": "ATT53",
+          "tagDesc": "China Grill",
+          "businessList": [
+            453,
+            456,
+            460,
+            464,
+            1043,
+            1303
+          ]
+        }
+      ]
+    }
+  ]
+}

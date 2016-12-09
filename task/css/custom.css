@@ -1,0 +1,46 @@
+.tableheader{
+	background-color: #3baff7;
+	color:white;
+}
+
+.iconsize{
+	font-size:20px;
+}
+
+.tablecolumnname{
+	margin-left:20px;
+	font-size:20px;
+}
+
+.iconposition{
+	font-size:20px;
+	float:right;
+}
+
+#placeholderdiv{
+	border:1px solid grey;
+	width: 220px;
+	
+}
+#placeholderdiv1{
+	border:1px solid grey;
+	width: 220px;
+	
+}
+.placeholder{
+	border:none !important;
+	width:80px;
+}
+
+.iconsizes{
+	float:right;
+	font-size:16px;
+	margin-right:10px;
+}
+
+.tableview{
+	height:250px;
+	width:880px;
+	margin-top:150px;
+	margin-left:90px;
+}

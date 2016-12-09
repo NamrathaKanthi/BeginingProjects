@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="myTask">
+	<head>
+		<title>Task</title>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/							font-awesome.min.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+			<script src="js/business.js"></script>
+			<style type="text/css">
+				@import url("css/custom.css");
+			</style>
+	</head>
+	<body>
+		<div class="table-responsive tableview">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<td class="tableheader"><div><span class="glyphicon glyphicon-paperclip iconsize"></span><span class="tablecolumnname">Attributes</span><span class="glyphicon glyphicon-pencil iconposition"></span></div></td>
+					<td class="tableheader"><div><span class="glyphicon glyphicon-tag iconsize"></span><span class="tablecolumnname">Tags</span><span class="glyphicon glyphicon-pencil iconposition"></span></div></td>
+					<td class="tableheader"><div><span class="glyphicon glyphicon-home iconsize"></span><span class="tablecolumnname">Select Business</span></div></td>
+				</tr>
+			</thead>
+			<tbody ng-controller="businessCtrl">
+				<tr>
+					<td>
+						<div id="placeholderdiv row">
+							<span class="col-md-offset -1 col-md-4"><input type="text" placeholder="Region" class="placeholder"></span>
+							<span class="col-md-4"><select style="border:none;" ng-model="x" ng-options="option.attributeTypeDesc for option in attributedetails">
+							</select></span>
+						</div>
+					</td>
+					<td>
+						<div class="placeholderdiv">
+						<input type="text" placeholder="Concept" class="placeholder">
+						</div>
+					</td>
+					<td>
+						<div id="placeholderdiv1 row">
+						<span class="col-md-4"><input type="text" placeholder="Search" class="placeholder"></span>	<span class="col-md-4"><select style="border:none;" ng-model="businessdetails.businessDesc">
+									<option ng-repeat="options in businessdetails">
+										{{options.businessDesc}}
+									</option>
+								</select>
+								</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div ng-repeat = 'attD in x.attribute'>
+							<span><input type="checkbox"></span><span>{{attD.attributeDesc}}</span>
+						</div>
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						<div>
+							<span><input type="checkbox"></span><span>{{businessdetails.businessDesc}}</span>
+						</div>
+						
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</body>
+</html>
