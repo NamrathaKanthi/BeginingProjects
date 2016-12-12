@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="timeoutSerivces">
+<head>
+	<title>Examples on timeout services</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+</head>
+<body>
+<div ng-controller="timeoutctrl">
+</div>
+<div ng-controller="timeoutcntrl">
+	
+</div>
+<script>
+	var app=angular.module('timeoutSerivces',[]);
+	app.controller('timeoutctrl',function($scope,$timeout,$interval){
+		function timeoutfunc(){
+			console.log("1");
+		}
+		function intervalfunc(){
+			console.log("3");
+		}
+
+		$scope.start = function() {
+    
+      var logic=$interval(intervalfunc,1000);
+		$interval.cancel(logic,5000);
+    }
+
+		
+		$timeout(timeoutfunc,5000);
+	});
+	app.controller('timeoutcntrl',function($scope,$timeout,$interval){
+		$scope.timeoutfunct = function(){
+			console.log("2");
+		}
+		$scope.intervalfunct = function(){
+			console.log("4");
+		}
+		var logic = $interval(function(){$scope.intervalfunct();},3000);
+		$interval.cancel(logic);
+		$timeout(function(){$scope.timeoutfunct();},5000);
+	});
+</script>
+</body>
+</html>
