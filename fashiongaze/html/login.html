@@ -1,4 +1,4 @@
-<html>
+<html ng-app="myApp">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,38 +8,47 @@
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/							font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<style type="text/css">
+			@import url("../css/custom.css");
+	</style>
+	<script src="../js/backend.js"></script>
 </head>
-<body>
-<div style="height:450px;width:650px;border:1px solid black;margin-left:150px;margin-top:100px;">
+<body class="bodycolor" ng-controller="myCntrl">
+<div style="height:450px;width:650px;border:1px solid #40CFFF;margin-left:150px;margin-top:100px;">
 	<div class="row" style="margin-top:40px;">
 		<div class="col-md-offset-2 col-md-5" >
-			<input type="text" placeholder="Enter First Name">
+			<input class="names" type="text" placeholder="Enter First Name" ng-model="obj.firstname">
 		</div>
 		<div class="col-md-5">
-			<input type="text" placeholder="Enter Last Name">
+			<input class="names" type="text" placeholder="Enter Last Name" ng-model="obj.lastname">
 		</div>
 	</div>
 	<div class="row" style="margin-top:20px;">
 		<div class="col-md-offset-2 col-md-5">
-			<input type="email" placeholder="Enter Email id">
+			<input class="email" type="email" placeholder="Enter Email id" ng-model="obj.emailid">
 		</div>
 	</div>
 	<div class="row" style="margin-top:20px;">
 		<div class="col-md-offset-2 col-md-5">
-			<input type="password" placeholder="Enter Password">
+			<input class="passwords" type="password" placeholder="Enter Password" ng-model="obj.password">
 		</div>
 		<div class="col-md-5">
-			<input type="password" placeholder="Re-type Password">
+			<input class="passwords" type="password" placeholder="Re-type Password" ng-model="obj.retypepassword">
 		</div>
 	</div>
 	<div class="row" style="margin-top:20px;">
 		<div class="col-md-offset-2 col-md-5">
-			<input type="text" placeholder="Enter Mobile Number">
+			<input class="email" type="text" placeholder="Enter Mobile Number" ng-model="obj.mobilenumber">
 		</div>
 	</div>
 	<div class="row" style="margin-top:20px;">
-		<div class="col-md-offset-5 col-md-3">
-			<button>SUBMIT</button>
+		<div class="col-md-offset-2 col-md-5">
+			<input class="email" type="text" placeholder="Enter Skype Id" ng-model="obj.skypeid">
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px;">
+		<div class="col-md-offset-4 col-md-3">
+			<button class="Button" ng-click="send()">SUBMIT</button>
 		</div>
 	</div>
 </div>

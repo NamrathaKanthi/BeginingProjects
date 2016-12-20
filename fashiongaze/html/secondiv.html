@@ -1,22 +1,22 @@
 <div ng-controller='myCntrl' class="row" style="height:30px;margin-top:20px;">
 			<div ng-show="searched">
-			<div class="col-md-offset-0 col-md-9 col-xs-10">
-				<span class="col-md-offset-0 col-md-5" style="margin-right:150px;margin-left:70px;"><strong>FREE SHIPPING</strong> in US on orders over <i class="fa fa-gbp" aria-hidden="true"></i> 75!</span>
-				<span class="col-md-1"><a href="html/login.html">Register</a></span>
-				<span class="col-md-1"><a href="#">Compare</a></span>
-				<span class="col-md-1"><a href="#">Wishlist</a></span>
+			<div class="col-md-offset-0 col-md-9 col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-9">
+				<span class="col-md-offset-0 col-md-5 col-sm-5 col-xs-6" style="margin-right:150px;margin-left:70px;"><strong>FREE SHIPPING</strong> in US on orders over <i class="fa fa-gbp" aria-hidden="true"></i> 75!</span>
+				<span class="col-md-1 col-sm-1 col-xs-3"><a href="html/login.html">Register</a></span>
+				<span class="col-md-1 col-sm-1 col-xs-2"><a href="#">Compare</a></span>
+				<span class="col-md-1 col-sm-1 col-xs-2"><a href="#">Wishlist</a></span>
 			</div>
-		    <div class="col-md-1">
+		    <div class="col-md-1 col-sm-1 col-xs-1">
 		     	<button style="background-color:transparent;border:0px solid;"><i class="material-icons md-48">shopping_cart</i></button>
 		    </div>
-	  		<div class="col-md-1">
+	  		<div class="col-md-1 col-sm-1 col-xs-1">
 	  			<button style="background-color:transparent;border:none;" ng-click='searching()'><i class="material-icons">search</i></button>
       		</div>
-	  		<div class="col-md-1">
+	  		<div class="col-md-1 col-sm-1 col-xs-1">
       		</div>
 			</div>
 		<div class="col-md-offset-1" ng-show="search">
-	  		<input type="text" placeholder="search">
+	  		<input class="search" type="text" placeholder="search">
 			<button style="background-color:transparent;border:none;position:absolute;"><i class="material-icons">search</i></button><button ng-click="closeing()" style="background-color:transparent;border:none;height:25px;position:absolute;margin-left:40px;"><i class="fa fa-times" aria-hidden="true"></i></button>
 	  	</div>
 		</div>
