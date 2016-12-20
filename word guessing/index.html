@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app='WordGuess'>
+<head>
+	<title>Word Guessing</title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+		<script type="text/javascript" src="js/word.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body class="bodycolor">
+
+	<div ng-controller='WordGuessCtrl'>
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+				<ul ng-repeat="x in z" class="word">
+					<li class="letter">
+						{{x.value}}
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12" style="margin-left:150px;margin-top:50px;">
+				<input type="text" class="guessletter" ng-model='enterletter' maxlength="1" placeholder="Enter Letter...... &#x23ce;">
+				<button class="guessButton" ng-click='guess(enterletter)'>guess</button>
+			</div>
+			<div class="col-md-12 col-sm-12" style="text-align: center;margin-top:50px;">
+				<p class="p-font guessletter">Hint:Words are web related. <br/>
+				<a class="p-font guessletter" href="http://codepen.io/natewiley">Follow Me on Codepen</a></p>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<ul ng-repeat="wrong in wrongword">
+					<li class="wrongli">
+						{{wrong}}
+					</li>
+				</ul>
+			</div>
+			<div>
+				<button class="guessButton" style="margin-left:300px;" ng-click='getRandomWord()'>New Game</button>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal" role="dialog">
+    		<div class="modal-dialog">
+		      	<div class="modal-content" style="background-color: #40CFFF;">
+			        <div class="modal-header">
+			          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        </div>
+			        <div class="modal-body">
+			          	<p class=".p-font guessletter" style="font-size:20px;text-align:center;">Awesome You Won!!!.....</p>
+			        </div>
+			        <div class="modal-footer">
+			          	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        </div>
+			    </div>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>

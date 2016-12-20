@@ -1,0 +1,74 @@
+.bodycolor{
+	background:#323232;
+}
+.p-font{
+	color:#40CFFF;
+	 font-size: 20px;
+   
+}
+.letter {
+  display:inline;
+  color: white;
+  border-bottom:5px solid #40CFFF;
+  margin:0 10px;
+  font-size:50px;
+  padding:10px;
+  transition:.5s;
+  text-transform:uppercase;
+}
+.word {
+  display:inline-block;
+  white-space: nowrap;
+}
+.correct {
+  color: $blue;
+  text-shadow: 1px 2px 0 #40CFFF;
+  animation: letteranim .3s ease;
+}
+
+input[type="text"] {
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border: 1px solid #aaa;
+    color: gray;
+  }
+  input, .guessButton ,.guessletter {
+    font-family: "Londrina Solid", cursive;
+  }
+  
+ .guessButton {
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #40CFFF;
+    color: white;
+    transition: .3s;
+    margin: 10px 0;
+    text-shadow: 1px 2px 0 $drk-blue;
+    &:hover {
+      background: $drk-blue;
+    }
+  }
+
+  .wrongletter{
+  	color: white;
+  	font-size: 20px;
+  }
+
+  .wrongli {
+    display: inline-block;
+    font-size: 20px;
+    background:lighten(red,15%);
+    text-shadow: 1px 2px 0 red;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 10px;
+    animation: letteranim .3s ease;
+    margin-left:320px;
+    margin-top:10px;
+  }
