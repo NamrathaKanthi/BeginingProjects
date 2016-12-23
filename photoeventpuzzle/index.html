@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app='photoApp'>
+	<head>
+		<title>photo div</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="js/photo.js"></script>
+	    <link href="css/custom.css" rel="stylesheet"/>
+	    
+	</head>
+	<body style="background-image:url(images/1.jpg);">
+			<h1 style="margin-left:400px;font-family:"Londrina Solid", cursive;">Solve Puzzle</h1>
+		<div id="main" ng-controller='photoCtrl'>
+			<div id="items">
+	            	<div ng-repeat="item in items">
+                		<div draggable="true" class="item" itemid="{{item.id}}"><img ng-src="{{item.image}}">
+                		</div>
+            		</div>
+	            </div>
+	        <div id="dropbox" droptarget="true">
+	            <div ng-repeat="item in dropped">
+                	<div class="item"><img ng-src="{{item.image}}"></div>
+            	</div>
+	        </div>
+        </div>
+		
+	</body>
+</html>
