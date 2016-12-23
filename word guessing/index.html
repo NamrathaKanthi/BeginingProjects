@@ -28,8 +28,8 @@
 			</div>
 			
 			<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12" style="margin-left:150px;margin-top:50px;">
-				<input type="text" class="guessletter" ng-model='enterletter' maxlength="1" placeholder="Enter Letter...... &#x23ce;">
-				<button class="guessButton" ng-click='guess(enterletter)'>guess</button>
+				<input type="text" class="guessletter" ng-model='enterletter' maxlength="1" placeholder="Enter Letter...... &#x23ce;" ng-keypress="inputvalue($event)">
+				<button class="guessButton" ng-click='guess(enterletter)' ng-keypress="EnterKey($event)">guess</button>
 			</div>
 			<div class="col-md-12 col-sm-12" style="text-align: center;margin-top:50px;">
 				<p class="p-font guessletter">Hint:Words are web related. <br/>
@@ -43,7 +43,7 @@
 				</ul>
 			</div>
 			<div>
-				<button class="guessButton" style="margin-left:300px;" ng-click='getRandomWord()'>New Game</button>
+				<button class="NextButton" style="margin-left:400px;" ng-click='getRandomWord()'>New Game</button>
 			</div>
 		</div>
 		<div class="modal fade" id="myModal" role="dialog">

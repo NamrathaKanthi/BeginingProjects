@@ -6,6 +6,12 @@
 	 font-size: 20px;
    
 }
+
+.active {
+    background-color: #4CAF50 !important; /* Green */
+   
+}
+
 .letter {
   display:inline;
   color: white;
@@ -35,7 +41,7 @@ input[type="text"] {
     border: 1px solid #aaa;
     color: gray;
   }
-  input, .guessButton ,.guessletter {
+  input, .guessButton ,.guessletter,.NextButton {
     font-family: "Londrina Solid", cursive;
   }
   
@@ -49,9 +55,7 @@ input[type="text"] {
     transition: .3s;
     margin: 10px 0;
     text-shadow: 1px 2px 0 $drk-blue;
-    &:hover {
-      background: $drk-blue;
-    }
+   
   }
 
   .wrongletter{
@@ -71,4 +75,17 @@ input[type="text"] {
     animation: letteranim .3s ease;
     margin-left:320px;
     margin-top:10px;
+  }
+
+  .NextButton {
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #40CFFF;
+    color: white;
+    transition: .3s;
+    margin: 10px 0;
+    text-shadow: 1px 2px 0 $drk-blue;
+   
   }
