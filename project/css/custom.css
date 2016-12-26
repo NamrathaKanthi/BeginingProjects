@@ -1,0 +1,119 @@
+#first-row{
+	height:100px;
+}
+
+#cloud-image{
+	height:75px;
+	width:120px;
+	margin-top:15px;
+	margin-left:65px;
+}
+
+#search-bar-div{
+	border:1px solid grey;
+	width:360px;
+	margin-top:30px;
+	height:41px;
+}
+
+#search-bar{
+	width:300px;
+	height:38px;
+	border:none;
+}
+
+#search-icon{
+	font-size:20px;
+	margin-left:30px;
+	color:grey;
+}
+
+#usericon-button{
+	font-size:60px;
+	margin-left:120px;
+	margin-top:15px;
+	background-color:transparent;
+	border:none;
+}
+
+#ellipsis-button{
+	font-size:35px;
+	margin-left:15px;
+	margin-top:30px;
+	background-color:transparent;
+	border:none;
+}
+
+#second-row{
+	height:64px;
+	background-color:#F2F2F2;
+	margin-top:15px;
+}
+
+#bars-button{
+	width:65px;
+	height:64px;
+	color:white;
+	font-size:24px;
+	border:none;
+	background-color:#9ACD32;
+}
+
+#text1{
+	color:#ACACAC;
+	padding-top:15px;
+	font-family:fira sans font;
+}
+
+#text2{
+	padding-top:15px;
+	font-size:20px;
+	font-family:fira sans font;
+}
+
+#first-panel-button{
+	margin-left:14px;
+	background-color:#1692e6;
+	height:34px;
+	width:33px;
+	color:white;
+	border:none;
+}
+#second-panel-button{
+	margin-left:13px;
+	background-color:#1692e6;
+	height:34px;
+	width:110px;
+	color:white;
+	border:none;
+}
+#second-panel-button1{
+	margin-left:5px;
+}
+#third-panel-button{
+margin-left:13px;
+background-color:#1692e6;
+height:34px;
+width:114px;
+color:white;
+border:none;
+}
+#third-panel-button1{
+	margin-left:55px;
+}
+
+#fourth-panel-button{
+	margin-left:13px;
+	background-color:#1692e6;
+	height:34px;
+	width:33px;
+	color:white;
+	border:none;
+}
+
+#main-table-button{
+	background-color:transparent;
+	border:none;
+	height:15px;
+	width:15px;
+}
