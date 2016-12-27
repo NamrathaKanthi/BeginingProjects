@@ -10,119 +10,159 @@
 			<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/							font-awesome.min.css">
 			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-			<script src="js/backend.js"></script>
+			<script src="js/appcontroller.js"></script>
+			<script src="js/appservice.js"></script>
+			<!-- <script type="text/javascript" src="js/appdirective.js"></script> -->
 			<style type="text/css">
 				@import url("css/custom.css");
 			</style>
 	</head>
+	<!-- controller intialization -->
 	<body ng-controller='appCtrl'>
-		<div class="row" id='first-row'>
-			<div class="col-md-offset-0 col-md-2 col-sm-offset-0 col-sm-2 col-lg-offset-0 col-lg-2 col-xs-offset-0 col-xs-2">
-				<img src="images/Novocloud-logo.png" id='cloud-image'>
-			</div>
-			<div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
-				
-			</div>
-			<div class="col-md-3 col-sm-3 col-xs-3 col-lg-3">
-				<div id='search-bar-div'>
-					<input type="text" id='search-bar'><span id='search-icon'><i class="fa fa-search" aria-hidden="true"></i></span>
+	<!-- main div-->
+		<div class="container-fluid">
+			<!--first row div-->
+			<div class="row" id='first-row'>
+				<!--image div-->
+				<div class="col-md-2 col-sm-2 col-lg-2 col-xs-3">
+					<img src="images/Novocloud-logo.png" id='cloud-image'>
+				</div>
+				<div class="col-md-4 col-sm-2 col-xs-0 col-lg-4">
+					
+				</div>
+				<!-- searchbar div-->
+				<div class="col-md-3 col-sm-4 col-xs-2 col-lg-3">
+					<div id='search-bar-div'>
+						<input type="text" id='search-bar'><span id='search-icon'><i class="fa fa-search" aria-hidden="true"></i></span>
+					</div>
+				</div>
+				<!-- usericon div-->
+				<div class="col-md-1 col-sm-2 col-xs-3 col-lg-1">
+					<button id='usericon-button'><i class="fa fa-user fa-3x" aria-hidden="true"></i></button>
+				</div>
+				<!-- menu icon div-->
+				<div class="col-md-1 col-sm-2 col-xs-2 col-lg-1">
+					<button id='ellipsis-button'><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
 				</div>
 			</div>
-			<div class="col-md-2 col-sm-2 col-xs-2 col-lg-2">
-				<button id='usericon-button'><i class="fa fa-user-circle" aria-hidden="true"></i></button>
-			</div>
-			<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1">
-				<button id='ellipsis-button'><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
-			</div>
-		</div>
-		<div class="row" id='second-row'>
-			<div class="col-md-offset-0 col-md-1">
-				<button id='bars-button'><i class="fa fa-bars" aria-hidden="true"></i></button>
-			</div>
-			<div class="col-md-4 col-sm-4 col-lg-4 col-xs-4" >
-				<div id='text1'>Farmer / Production</div>
-				<span id='text2'><strong>Crop & Yield Forecast vs Actual</strong></span>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-offset-0 col-md-12 col-sm-12 col-lg-12 col-xs-12">
-			   <div class="panel panel-default">
-			     <div class="panel-body">
-				     <button id='first-panel-button'><i class="fa fa-arrow-left" aria-hidden="true"></i>
-				     </button>
-				     <button id='second-panel-button'>Commodity<span id='second-panel-button1'><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-				     </button>
-				     <button id='third-panel-button'>All<span id='third-panel-button1'><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-				     </button>
-				     <button id='fourth-panel-button'><i class="fa fa-search" aria-hidden="true"></i>
-				     </button>
-			     </div>
-			    </div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-offset-0 col-md-12" style="border-top:none;border-color:grey;border-bottom-style:solid;border-width:1px;height:40px;">
-				<span class="col-md-2"><strong>Commodity</strong></span>
-				<span class="col-md-2"><strong>Total Acres</strong></span>
-				<span class="col-md-2"><strong># of Fields</strong></span>
-				<span class="col-md-2"><strong>Yield</strong></span>
-				<span class="col-md-2"><strong>% of Target</strong></span>
-			</div>
-		</div>
-			<div class="row" ng-repeat="data in fruitdetails">
-				<div class="col-md-offset-0 col-md-12" style="margin-top:24px;">
-					<span class="col-md-2">
-						<button id='main-table-button' ng-click='showingtable()'><i class="fa fa-plus-square-o" aria-hidden="true"></i>
-						</button>
-						<span style="margin-left:20px;">{{data.commodityname}}</span>
-					</span>
-					<span class="col-md-2">{{data.totalacres}}</span>
-					<span class="col-md-2">{{data.hashoffields}}</span>
-					<span class="col-md-2">{{data.yield}}</span>
-					<span class="col-md-2" style="color:#66cc00;font-size:20px;"><i class='fa fa-check' aria-hidden='true'></i></span>
+			<!-- second row-->
+			<div class="row" id='second-row'>
+				<!-- alingn icon div-->
+				<div class="col-md-1 col-sm-4 col-xs-4 col-lg-1">
+					<button id='bars-button'><i class="fa fa-align-justify" title="Align Justify" aria-hidden="true"></i></button>
 				</div>
-			
-		     	<div class="table-responsive col-md-offset-0 col-md-12" ng-show="showtable" style="margin-top:25px;">
-		  			<table class="table table-bordered">
-					    <thead>
-						    <tr class="active">
-						        <th>Field</th>
-						        <th>Acres</th>
-						        <th>Commodity/Variety</th>
-						        <th>Forecast Date</th>
-						        <th>Forecast Target</th>
-						        <th>DTH</th>
-						        <th>Harvest Date</th>
-						        <th>Actual</th>
-						        <th>Tag</th>
-						        <th>% of Target</th>
-						        <th></th>
-						    </tr>
-					    </thead>
-					    <tbody>
-						    <tr ng-repeat="data1 in data.details">
-						      	<td style="color:skyblue;">{{data1.sno}}</td>
-						      	<td>{{data1.acres}}</td>
-						        <td>{{data1.commodity}}</td>
-						        <td>{{data1.ForecastDate}}</td>
-						        <td>{{data1.ForecastTarget}}</td>
-						        <td>{{data1.DTH}}</td>
-						        <td>{{data1.HarvestDate}}</td>
-						        <td>{{data1.Actual}}</td>
-						        <td>{{data1.Tag}}</td>
-						        <td>{{data1.percentageofTarget}}</td>
-						        <td><i class='fa fa-comment' aria-hidden='true'></i></td>
-						    </tr>
-						    <!-- <tr>
-						    	<td><span>Sum</span></td>
-						    	<td></td>
-						    	<td></td>
-						    	<td></td>
-						    	<td></td>
-						    </tr> -->
-					    </tbody>
-			  		</table>
+				<!-- headings div-->
+				<div class="col-md-4 col-sm-8 col-lg-4 col-xs-6" >
+					<div><h6>Farmer / Production</h6></div>
+					<h4>Crop & Yield Forecast vs Actual</h4>
 				</div>
+			</div>
+			<!-- third row div-->
+			<div id='third-row'>
+				<!-- arrow button-->
+				<span>
+					<button id='first-panel-button'><i class="fa fa-arrow-left" aria-hidden="true"></i>
+					</button>
+				</span>
+				<!-- commodity icon button-->
+				<span>
+					<button id='second-panel-button'><span id='third-row-commodity'>Commodity</span><span id='second-panel-button1'><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+					</button>
+				</span>
+				<!-- all icon button-->
+				<span>
+					<button id='third-panel-button'><span>All</span><span id='third-panel-button1'><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+					</button>
+				</span>
+				<!-- search icon button-->
+				<span>
+					<button id='fourth-panel-button'><i class="fa fa-search" aria-hidden="true"></i></button>
+				</span>
+				<!-- plus icon div-->
+				<div id=plusdiv>
+					<button id="plusicon"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
 				</div>
+			</div>
+			<!-- table row-->
+			<div class="row">
+				<!-- table header-->
+				<div class="col-md-offset-0 col-md-12" id='first-table-header'>
+					<!-- commodity cloumn-->
+					<span class="col-md-2 col-sm-2 col-xs-3" id="commodity-style"><strong>Commodity</strong></span>
+					<!-- total acres column-->
+					<span class="col-md-2 col-sm-2 col-xs-2"><strong>Total Acres</strong></span>
+					<!-- fields column-->
+					<span class="col-md-2 col-sm-2 col-xs-2"><strong># of Fields</strong></span>
+					<!-- yeild column-->
+					<span class="col-md-2 col-sm-2 col-xs-1"><strong>Yield</strong></span>
+					<!-- percentage column-->
+					<span class="col-md-2 col-sm-2 col-xs-3" id='percentageofTarget-style'><strong>% of Target</strong></span>
+				</div>
+			</div>
+				<!-- inner table-->
+				<div class="row" ng-repeat="data in fruitdetails">
+					<!-- child table header-->
+					<div class="col-md-offset-0 col-md-12 col-xs-12" id='table-data-div'>
+					<!-- square button-->
+						<span class="col-md-2 col-xs-4">
+							<button id='main-table-button' ng-click='show=!show' ng-class="{'fa fa-plus-square-o':!show,'fa fa-minus-square-o':show}" aria-hidden="true">
+							</button>
+							<span>{{data.commodityname}}</span>
+						</span>
+						<span class="col-md-2 col-sm-2 col-xs-2">{{data.totalacres}}</span>
+						<span class="col-md-2 col-sm-2 col-xs-2">{{data.hashoffields}}</span>
+						<span class="col-md-2 col-sm-2 col-xs-2">{{data.yield}}</span>
+						<span class="col-md-2 col-sm-2 col-xs-2" id="checkstyle"><i class='fa fa-check' aria-hidden='true'></i></span>
+					</div>
+					<!-- inner table data-->
+			     	<div class="table-responsive col-md-12 col-sm-12 col-xs-12" ng-show="show">
+			  			<table class="table">
+						    <thead>
+							    <tr id='headcolor'>
+							        <th>Field</th>
+							        <th>Acres</th>
+							        <th>Commodity/Variety</th>
+							        <th>Forecast Date</th>
+							        <th>Forecast Target</th>
+							        <th>DTH</th>
+							        <th>Harvest Date</th>
+							        <th>Actual</th>
+							        <th>Tag</th>
+							        <th>% of Target</th>
+							        <th></th>
+							    </tr>
+						    </thead>
+						    <tbody>
+							    <tr ng-repeat="data1 in data.details" class='bodycolor'>
+							      	<td style="color:#8dc3e8;">{{data1.sno}}</td>
+							      	<td>{{data1.acres}}</td>
+							        <td>{{data1.commodity}}</td>
+							        <td>{{data1.ForecastDate}}</td>
+							        <td>{{data1.ForecastTarget}}</td>
+							        <td>{{data1.DTH}}</td>
+							        <td>{{data1.HarvestDate}}</td>
+							        <td>{{data1.Actual}}</td>
+							        <td>{{data1.Tag}}</td>
+							        <td>{{data1.percentageofTarget}}</td>
+							        <td><i class='fa fa-comment' aria-hidden='true'></i></td>
+							    </tr>
+							    <tr class='bodyrowcolor'>
+							      	<td><bold>{{data.sno}}</bold></td>
+							      	<td></td>
+							        <td></td>
+							        <td></td>
+							        <td><bold>{{data.ForecastTarget}}</bold></td>
+							        <td></td>
+							        <td></td>
+							        <td></td>
+							        <td></td>
+							        <td><bold>{{data.percentageofTarget}}</bold></td>
+							      	<td></td>
+							    </tr>
+						    </tbody>
+				  		</table>
+					</div>
+				</div>
+			</div>
 	</body>
 </html>

@@ -5,6 +5,9 @@
    "totalacres":"25",
    "hashoffields":"4",
    "yield":"1998",
+   "sno":"Sum",
+      "ForecastTarget":"2100",
+      "percentageofTarget":"90.5%",
    "details":[
      {
        "sno":"Field1",
@@ -28,8 +31,7 @@
        "HarvestDate":"6/5",
        "Actual":"945",
        "Tag":"12y",
-       "percentageofTarget":"90%",
-       "symbol":"<i class='fa fa-comment' aria-hidden='true'></i>"
+       "percentageofTarget":"90%"
      }
      
      ]
@@ -39,6 +41,9 @@
    "totalacres":"25",
    "hashoffields":"2",
    "yield":"2074",
+   "sno":"Sum",
+        "ForecastTarget":"2000",
+        "percentageofTarget":"101%",
    "details":[
      {
        "sno":"Field4",
@@ -71,6 +76,9 @@
    "totalacres":"30",
    "hashoffields":"4",
    "yield":"1870",
+    "sno":"Sum",
+        "ForecastTarget":"2200",
+        "percentageofTarget":"104.5%",
    "details":[
      {
        "sno":"Field3",
@@ -96,14 +104,17 @@
        "Tag":"12y",
        "percentageofTarget":"90%"
      }
-     
      ]
+
    },
    {
     "commodityname":"Broccoli",
    "totalacres":"50",
    "hashoffields":"3",
    "yield":"2135",
+    "sno":"Sum",
+        "ForecastTarget":"2500",
+        "percentageofTarget":"102%",
    "details":[
      {
        "sno":"Field7",
@@ -128,7 +139,7 @@
        "Actual":"945",
        "Tag":"12y",
        "percentageofTarget":"90%"
-     }
+     }     
      ] 
    }
     ]
