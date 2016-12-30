@@ -44,6 +44,9 @@
 		background-color:#d8d8d8;
 		-webkit-border-radius: 50%; 
 		-moz-border-radius: 50%;
+		border:none;
+		height:50px;
+		width:50px;
 	}
 
 	#ellipsis-button{
@@ -96,18 +99,21 @@
 	}
 
 	#plusdiv{
-		 margin-right:70px !important; 
+		margin-right:70px !important; 
 		margin-top:-35px !important;
 		display: inline;
 		float: right;
-		 height: 58px;
-		 width: 58px;
+		height: 58px;
+		width: 58px;
 	}
 
 	#plusicon{
 		-webkit-border-radius: 50%; 
-		 background-color: #46a8e3;
-		 color: white;
+		background-color: #46a8e3;
+		color: white;
+		height:50px;
+		width:45px;
+		border:none;
 
 	}
 	#third-row-commodity{

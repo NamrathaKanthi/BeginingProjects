@@ -2,25 +2,25 @@
 <html ng-app='myApp'>
 	<head>
 		<title>Novo Cloud</title>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-			<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/							font-awesome.min.css">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-			<script src="js/appcontroller.js"></script>
-			<script src="js/appservice.js"></script>
-			<!-- <script type="text/javascript" src="js/appdirective.js"></script> -->
-			<style type="text/css">
-				@import url("css/custom.css");
-			</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/							font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="js/appcontroller.js"></script>
+		<script src="js/appservice.js"></script>
+		<!-- <script type="text/javascript" src="js/appdirective.js"></script> -->
+		<style type="text/css">
+			@import url("css/custom.css");
+		</style>
 	</head>
 	<!-- controller intialization -->
 	<body ng-controller='appCtrl'>
 	<!-- main div-->
-		<div class="container-fluid">
+		<div class="container-fluid" >
 			<!--first row div-->
 			<div class="row" id='first-row'>
 				<!--image div-->
@@ -46,10 +46,11 @@
 				</div>
 			</div>
 			<!-- second row-->
+			<div style="position:fixed;width:100%;">
 			<div class="row" id='second-row'>
 				<!-- alingn icon div-->
 				<div class="col-md-1 col-sm-4 col-xs-4 col-lg-1">
-					<button id='bars-button'><i class="fa fa-align-justify" title="Align Justify" aria-hidden="true"></i></button>
+					<button ng-click='searching()' id='bars-button'><i class="fa fa-align-justify" title="Align Justify" aria-hidden="true"></i></button>
 				</div>
 				<!-- headings div-->
 				<div class="col-md-4 col-sm-8 col-lg-4 col-xs-6" >
@@ -80,7 +81,7 @@
 				</span>
 				<!-- plus icon div-->
 				<div id=plusdiv>
-					<button id="plusicon"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
+					<button id="plusicon"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
 				</div>
 			</div>
 			<!-- table row-->
@@ -162,6 +163,23 @@
 						    </tbody>
 				  		</table>
 					</div>
+				</div>
+				</div>
+			</div>
+			<div ng-show="search" style="position:absolute;height:500px;margin-top:15px;width: 100%;background-color: rgba(0,0,0,0.5) ;">
+				<div  style="width:261px;height:600px;background-color:#84b84a;">
+		          	<div>
+			          	<span style="color:white;font-size:20px;">Farmer Menu</span>
+			          	<button style="background-color:transparent;border:none;" ng-click="closeing()"><span style="margin-left:50px;font-size:24px;color:white;">
+			          	<i class="fa fa-align-justify" title="Align Justify" aria-hidden="true"></i>
+			          	</span></button>
+		          	</div>
+		          	<hr>
+		            <div><span style="color:white;font-size:20px;">Farmer Dashboard</span></div>
+		            <div style="margin-top:38px;"><span style="color:white;font-size:20px;">Production</span></div>
+		            <div style="margin-top:38px;"><span style="color:white;font-size:20px;">Food Safety</span></div>
+		            <div style="margin-top:38px;"><span style="color:white;font-size: 20px;">Traceability</span></div>
+		            <div style="margin-top:38px;"><span style="color:white;font-size:20px;">Recall/Incident Tracking</span></div>
 				</div>
 			</div>
 	</body>
