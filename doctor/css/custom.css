@@ -1,0 +1,72 @@
+.material-icons.orange600 { color:white; }
+.material-icons.md-48 { font-size: 30px; }
+.search{
+	background-color: #e5e5e5;
+	border: solid;
+	border-radius: 10px; /*-------radius of curve ness of border---------*/
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-size: 14px;
+	height: 40px; /*--height of box--*/
+	padding: 10px 10px;
+	/*margin : 10px;*/
+	width: 600px;  /*-----width of box-----*/
+}
+.bodycolor{
+	background-color:white;
+}
+
+.names{
+	background-color: #e5e5e5;
+	border: solid;
+	border-radius: 10px; /*-------radius of curve ness of border---------*/
+	color: #40CFFF;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-size: 14px;
+	height: 40px; /*--height of box--*/
+	padding: 10px 10px;
+	/*margin : 10px;*/
+	width: 200px;  /*-----width of box-----*/
+}
+
+.email{
+	background-color: #e5e5e5;
+	border: solid;
+	border-radius: 10px; /*-------radius of curve ness of border---------*/
+	color: #40CFFF;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-size: 14px;
+	height: 40px; /*--height of box--*/
+	padding: 10px 10px;
+	/*margin : 10px;*/
+	width: 480px;  /*-----width of box-----*/
+
+}
+.passwords{
+	background-color: #e5e5e5;
+	border: solid;
+	border-radius: 10px; /*-------radius of curve ness of border---------*/
+	color: #40CFFF;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-size: 14px;
+	height: 40px; /*--height of box--*/
+	padding: 10px 10px;
+	/*margin : 10px;*/
+	width: 200px;  /*-----width of box-----*/
+
+}
+
+.Button {
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #40CFFF;
+    color: white;
+    transition: .3s;
+    margin: 10px 0;
+    text-shadow: 1px 2px 0 $drk-blue;
+    &:hover {
+      background: $drk-blue;
+   }
+   }
