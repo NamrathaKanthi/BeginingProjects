@@ -1,0 +1,287 @@
+.main-div{
+	height: 55px;
+	background-color: #eaeaea;
+	color:#8c8885; 
+}
+
+.innerdiv{
+	padding-top: 15px;
+}
+
+.secondiv{
+	border-bottom: 1px solid #cfcfcf;
+}
+
+.firstrow{
+	margin-top:15px;
+}
+
+#firstp{
+	margin-left: 15px;
+}
+
+#secondp{
+	margin-left: 15px;
+}
+
+#thirdp{
+	margin-left: 15px;
+}
+
+.thirdrow{
+	margin-top:10px;
+	font-size:25px;
+}
+
+#buttondiv{
+	height: 40px;
+	background-color: #e3f1e2;
+}
+
+#button{
+	background-color: transparent;
+	border: none;
+	margin-left:382px;
+	margin-top:12px;
+}
+
+#plus{
+	opacity:0.6;
+}
+
+#add{
+	margin-left:5px;
+}
+
+
+#divtext1{
+	/*background-color: #e5e5e5;*/
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; /*-------radius of curve ness of border---------*/
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-size: 14px;
+	height:35px; /*--height of box--*/
+	width:300px;
+	margin-top: 10px;
+}
+
+#divtext1input{
+	border: none;
+	width:250px;
+	height: 25px;
+}
+
+#divtext1button{
+	background-color: transparent;
+	border: none;
+	margin-left:20px;
+	margin-top:5px;
+}
+#divtext2{
+	/*background-color: #e5e5e5;*/
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; /*-------radius of curve ness of border---------*/
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-size: 14px;
+	height:35px; /*--height of box--*/
+	width:300px;
+	margin-top: 10px;
+}
+#divtext2input{
+	border: none;
+	width:250px;
+	height: 25px;
+}
+
+#divtext2button{
+	background-color: transparent;
+	border: none;
+	margin-left:20px;
+	margin-top:5px;
+}
+
+.seconddiv{
+	margin-left: 15px;
+	margin-top: 35px;
+}
+#divtext3{
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width: 190px;
+	margin-top: 10px;
+}
+
+#divtext3input{
+	border: none;
+	width:150px;
+	height: 25px;
+}
+
+#divtext3button{
+	background-color: transparent;border: none;
+}
+
+.thirddiv{
+	margin-left:45px;
+	margin-top: 35px;
+}
+#divtext4{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
+	font-size: 14px;
+	height:35px; 
+	width: 175px;
+	margin-top: 10px;
+}
+
+#divtext4input{
+	border: none;
+	height: 25px;cursor: pointer;
+}
+
+#thirddiv2{
+	margin-top: 35px;
+}
+#divtext5{
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
+	font-size: 14px;
+	height:35px; 
+	width: 190px;
+	margin-top: 10px;
+}
+
+#divtext5input{
+	border: none;width:150px;height: 25px;
+}
+#divtext5button{
+	background-color: transparent;border: none;
+}
+
+.fourthdiv{
+	margin-left: 15px;margin-top: 35px;
+}
+#divtext5{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width: 190px;
+	margin-top: 10px;
+}
+#divtext5input{
+	border: none;width:150px;height: 25px;
+}
+
+#divtext5button{
+	background-color: transparent;border: none;
+}
+
+.fouthdiv2{
+	margin-left:40px;margin-top: 35px;
+}
+#divtext6{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px;
+	width: 190px;
+	margin-top: 10px;
+}
+
+#divtext6input{
+	border: none;width:150px;height: 25px;
+}
+
+#divtext6button{
+	background-color: transparent;border: none;
+}
+#divtext7{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width: 190px;
+	margin-top: 10px;
+}
+.fifthdiv{
+	margin-left:56px;margin-top: 35px;
+}
+#divtext7input{
+	border: none;width:150px;height: 25px;
+}
+
+#divtext7button{
+	background-color: transparent;border: none;
+}
+#checkbox{
+	margin-left: 15px;margin-top:62px;
+}
+#checkboxdiv{
+	margin-left: 15px;margin-top: 45px;
+}
+
+#descdiv{
+	height: 56px;width:650px;border: 1px solid #cfcfcf;border-radius:5px;
+}
+
+#info{
+	margin-right:30px;font-size:20px;
+}
+
+#params{
+	margin-right:20px;font-size: 20px;
+}
+
+#paramsbutton{
+	background-color: transparent;border: none;
+}
+
+#arrowbutton{
+	margin-right:30px;font-size:20px;
+}
+
+#arrowbutton2{
+	background-color: transparent;border:1px solid #cfcfcf;border-radius: 3px;
+}
+.asetrick{
+	color:#fa1323;
+	margin-left:2px;
+}
+
+.calender-icon{
+	position: relative;
+	right: 15px;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+#modal{
+	height:600px;
+	width:700px;
+}
+
+#modalbody{
+	height:450px;
+	overflow-y:scroll !important;
+}
