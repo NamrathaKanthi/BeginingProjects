@@ -4,28 +4,52 @@
 	color:#8c8885; 
 }
 
-.innerdiv{
-	padding-top: 15px;
+
+#tableheadingdiv{
+	height:40px;
+	margin-top:70px;
+	background-color: #eaeaea;
+	color: #888687;
 }
 
-.secondiv{
+#firsttable{
+	margin-top:24px;
 	border-bottom: 1px solid #cfcfcf;
 }
 
-.firstrow{
-	margin-top:15px;
+#angledownbutton{
+	background-color: transparent;
+	border:none;
 }
 
-#firstp{
-	margin-left: 15px;
+#angledownbutton:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#angledownbutton:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#angledownbutton:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
+#angledownicon{
+	font-size:20px;
 }
 
-#secondp{
-	margin-left: 15px;
+#hourglassicon{
+	margin-left:25px;
 }
 
-#thirdp{
-	margin-left: 15px;
+#closeicon{
+	margin-left:10px;
 }
 
 .thirdrow{
@@ -41,9 +65,34 @@
 #button{
 	background-color: transparent;
 	border: none;
-	margin-left:382px;
 	margin-top:12px;
+	width: 800px;
 }
+
+#button:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#button:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#button:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
+
+.buttonclass{
+	background-color: transparent;
+	border: none;
+}
+
 
 #plus{
 	opacity:0.6;
@@ -72,6 +121,24 @@
 	padding-left:20px;
 }
 
+#divtext1input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+ #divtext1input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext1input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 #divtext1button{
 	background-color: transparent;
 	border: none;
@@ -79,13 +146,12 @@
 	margin-top:5px;
 }
 #divtext2{
-	/*background-color: #e5e5e5;*/
 	border: 1px solid #cfcfcf;
-	border-radius: 3px; /*-------radius of curve ness of border---------*/
+	border-radius: 3px; 
 	color: #5a5656;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
 	font-size: 14px;
-	height:35px; /*--height of box--*/
+	height:35px; 
 	width:300px;
 	margin-top: 10px;
 }
@@ -95,6 +161,25 @@
 	height: 30px;
 	padding-left:20px;
 }
+
+#divtext2input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+ #divtext2input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext2input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 
 #divtext2button{
 	background-color: transparent;
@@ -125,6 +210,24 @@
 	padding-left:20px;
 }
 
+#divtext3input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext3input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext3input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 #divtext3button{
 	background-color: transparent;
 	border: none;
@@ -154,6 +257,25 @@
 	padding-left:20px;
 }
 
+.divtext4input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+.divtext4input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+.divtext4input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
+
 #thirddiv2{
 	margin-top: 35px;
 }
@@ -174,6 +296,25 @@
 	height:30px;
 	padding-left:20px;
 }
+
+#divtext5input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext5input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext5input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 #divtext5button{
 	background-color: transparent;
 	border: none;
@@ -183,7 +324,7 @@
 	margin-left: 15px;
 	margin-top: 35px;
 }
-#divtext5{
+/*#divtext5{
 	
 	border: 1px solid #cfcfcf;
 	border-radius: 3px; 
@@ -204,7 +345,7 @@
 #divtext5button{
 	background-color: transparent;
 	border: none;
-}
+}*/
 
 .fouthdiv2{
 	margin-left:40px;
@@ -228,6 +369,25 @@
 	height:30px;
 	padding-left:5px !important;
 }
+
+#divtext6input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+ #divtext6input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext6input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 
 #divtext6button{
 	background-color: transparent;
@@ -254,6 +414,25 @@
 	height:30px;
 	padding-left:20px;
 }
+
+#divtext7input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext7input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext7input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 
 #divtext7button{
 	background-color: transparent;
@@ -283,6 +462,24 @@
 	padding-left:20px;
 }
 
+#divtext8input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext8input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext8input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 #divtext8button{
 	background-color: transparent;
 	border: none;
@@ -306,6 +503,24 @@
 	height:30px;
 	padding-left:20px;
 }
+
+#divtext9input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext9input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext9input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
 
 #divtext9button{
 	background-color: transparent;
@@ -331,6 +546,24 @@
 	padding-left:20px;
 }
 
+#divtext10input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext10input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext10input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 #divtext10button{
 	background-color: transparent;
 	border: none;
@@ -354,6 +587,24 @@
 	height:30px;
 	padding-left:20px;
 }
+
+#divtext11input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext11input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext11input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
 
 #divtext11button{
 	background-color: transparent;
@@ -379,6 +630,24 @@
 	padding-left:20px;
 }
 
+#divtext12input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext12input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext12input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 #divtext12button{
 	background-color: transparent;
 	border: none;
@@ -403,6 +672,24 @@
 	padding-left:20px;
 }
 
+#divtext13input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext13input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext13input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
+
 #divtext14{
 	
 	border: 1px solid #cfcfcf;
@@ -421,6 +708,24 @@
 	height:30px;
 	padding-left:20px;
 }
+
+#divtext14input:focus{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext14input:hover{
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+#divtext14input:active{
+   border: none;
+   background: transparent !important;
+   outline: none !important;
+ }
 
 #divtext14button{
 	background-color: transparent;
@@ -446,16 +751,24 @@
 #info{
 	margin-right:30px;
 	font-size:20px;
+	color: #596a95;
+}
+#info1{
+	margin-right:30px;
+	font-size:20px;
+	color: #c6c6c6;
 }
 
 #params{
 	margin-right:20px;
 	font-size: 20px;
+	color: #596a95;
 }
 
-#paramsbutton{
-	background-color: transparent;
-	border: none;
+#paramsa{
+	margin-right:20px;
+	font-size: 20px;
+	color: #c6c6c6;
 }
 
 #arrowbutton{
@@ -467,8 +780,16 @@
 	background-color: transparent;
 	border:1px solid #cfcfcf;
 	border-radius: 3px;
-	width:60px;
-	height: 60px;
+	width:40px;
+	height:40px;
+}
+
+#savebutton{
+	background-color: transparent;
+	border: 1px solid #cfcfcf;
+	width:45px;
+	height:40px;
+	border-radius: 3px;
 }
 .asetrick{
 	color:#fa1323;
@@ -499,4 +820,18 @@
 
 .errormessage{
 	color: #882738;
+}
+
+.innersearchbarbig{
+	width:290px;
+	margin-left:5px;
+	border-radius:5px;
+	border:1px solid #cfcfcf;
+}
+
+.innersearchbarsmall{
+	width:180px;
+	margin-left:5px;
+	border-radius:5px;
+	border:1px solid #cfcfcf;
 }

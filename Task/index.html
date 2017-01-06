@@ -25,58 +25,54 @@
 		</style>
 </head>
 <body ng-controller='taskCtrl'>
-	<form name='userform' novalidate ng-class="{'error':isChecked}">
-		<div class=' row main-div form-group'>
-			<div class="col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-2 innerdiv"><b>Frequency Type</b></div>
-			<div class="col-md-2 col-sm-2 innerdiv"><b>Start Date</b></div>
-			<div class="col-md-2 col-sm-2 innerdiv"><b>End Date</b></div>
-			<div class="col-md-2 col-sm-2 innerdiv"><b>Total Cash With Tax</b></div>
-			<div class="col-md-2 col-sm-2 innerdiv"><b>Actions</b></div>
-
-		</div>
-		<div class="row secondiv">
-			<div class="col-md-2 col-sm-2 firstrow">
-				<p id='firstp'>Design Fees</p>
-			</div>
-			<div class="col-md-9 col-sm-9">
-				
-			</div>
-			<div class="col-md-1 col-sm-1 thirdrow">
-				<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-			</div>
-			
-		</div>
-		<div class="row secondiv">
-			<div class="col-md-3 col-sm-3 firstrow">
-				<p id='secondp'>Administrative Fees</p>
-			</div>
-			<div class="col-md-8 col-sm-8">
-				
-			</div>
-			<div class="col-md-1 col-sm-1 thirdrow">
-				<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-			</div>
-			
-		</div>
-		<div class="row secondiv">
-			<div class="col-md-2 col-sm-2 secondinnerdiv firstrow">
-				<p id='thirdp'>Amortization</p>
-			</div>
-			<div class="col-md-9 col-sm-9 secondinnerdiv">
-				
-			</div>
-			<div class="col-md-1 col-sm-1 secondinnerdiv thirdrow">
-				<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-			</div>
-		</div>
+	<div class="container-fluid" >
+	<form class="row" name='userform' novalidate ng-class="{'error':isChecked}">
 		<div class="row">
-			<div class="col-md-12 col-sm-12" id='buttondiv'>
-				<button id='button' data-toggle="modal" data-target="#myModal"><span id='plus'><i class="fa fa-plus" aria-hidden="true"></i></span><span id='add'>Add</span></button>
+			<div class="col-sm-12 col-md-12" id='tableheadingdiv'>
+				<span class="col-md-2 col-sm-2"></span>
+				<span class="col-md-2 col-sm-2"><strong>Frequency Type</strong></span>
+				<span class="col-md-2 col-sm-2"><strong>Start Date</strong></span>
+				<span class="col-md-2 col-sm-2"><strong>End Date</strong></span>
+				<span class="col-md-2 col-sm-2"><strong>Total Cash With Tax</strong></span>
+				<span class="col-md-2 col-sm-2"><strong>Actions</strong></span>
 			</div>
-		</div>
+			<div class="row" ng-repeat='x in Details'>
+				<div class="col-md-12 col-sm-12" id='firsttable' >
+					<span class="col-md-2 col-sm-2">
+						{{x.paymentinfo}}
+					</span>
+					<span class="col-md-8 col-sm-8"></span>
+					<button ng-click='showingtable()' id='angledownbutton'><span class="col-md-2 col-sm-2" id='angledownicon'><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
+				</div>
 
+			
+			 	 <div>{{x.details}}</div>
+					<div class="table-responsive" ng-show="showtable1">  
+				
+				 	<!-- <div>{{x.details}}</div>  -->
+ 		  			<table class="table">
+			    		<tbody>
+							<tr ng-repeat='y in x.details'>
+								<td class="col-md-2 col-sm-2"><span id='hourglassicon'><i class="fa fa-hourglass-half" aria-hidden="true"></i></span></td>
+						        <td class="col-md-2 col-sm-2">{{y.frequency}}</td>
+						        <td class="col-md-2 col-sm-2">{{y.periodStartdate}}</td>
+						        <td class="col-md-2 col-sm-2">10/11/2016</td>
+						        <td class="col-md-2 col-sm-2">{{0.0}}</td>
+						        <td class="col-md-2 col-sm-2"><button class="buttonclass" data-toggle="modal" data-target="#myModal" ng-hide="viewField" ng-click="modify(y)"><span><i class="fa fa-pencil" aria-hidden="true"></i></span></button><button class="buttonclass" ng-hide="viewField" ng-click="deletedata(y)"><span id='closeicon'><i class="fa fa-times" aria-hidden="true"></i></span></button></td>
+						    </tr>
+	    				</tbody>
+  					</table>
+  				</div>
+  			</div>
+  		<div class="row">
+	  		<div class="col-md-12 col-sm-12" id='buttondiv'>
+	  		<button data-toggle="modal" data-target="#myModal" id='button'><span id='plus'><i class="fa fa-plus" aria-hidden="true"></i></span><span id='add'>Add</span></button>
+	  		</div>
+  		</div>
+  		</div>
 		<firstmodel></firstmodel>
   		<secondmodel></secondmodel>
 	</form>
+	</div>
 </body>
 </html>

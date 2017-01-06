@@ -4,22 +4,16 @@
 	.module('TaskApp')
 	.factory('taskFactory',function(){
 		var factory={};
-	factory.storedetails = function(){
-		factory.SearchText=$scope.SearchText;
-		factory.accountfeildtext=$scope.accountfeildtext;
-		factory.searchText=$scope.searchText;
-		factory.date=$scope.date;
-		factory.paymentfieldtext=$scope.paymentfieldtext;
-		factory.PaymentDueon=$scope.PaymentDueon;
-		factory.paymentdueData=$scope.paymentdueData;
-		console.log(factory.SearchText);
-		console.log(factory.accountfeildtext);
-		console.log(factory.searchText);
-		console.log(factory.date);
-		console.log(factory.paymentfieldtext);
-		console.log(factory.PaymentDueon);
-		console.log(factory.paymentdueData);
-	}
-	return factory;
-	});
+		return {
+		updateInfo: function(key, value) {
+        factory[key] = value;
+		console.log("123");
+		console.log(factory);
+      },
+      getInfo: function(key) {
+		  console.log(factory[key]);
+        return factory[key];
+      } 
+	};
+});
 })();

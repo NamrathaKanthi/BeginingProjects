@@ -13,15 +13,15 @@
 				        	<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
 				        </div>
 			        	<div class="dropdown">
-				          	<div id="divtext1"> 
-				          		<span><input type='text' placeholder='Select' name='myInput' ng-model="SearchText" id='divtext1input' required>
+				          	<div id="divtext1" > 
+				          		<span><input type='text' placeholder='Select' name='myInput' ng-model="SearchText" id='divtext1input' required >
 				          		</span>
 				          		<button id='divtext1button' class="dropdown-toggle" data-toggle="dropdown">
 				          			<span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 				          		</button>
 					          	<ul class="dropdown-menu" >
-					          		<input type="text" placeholder="Search">
-								    <li ng-repeat= "x in Paymentdetails | filter:SearchText">
+					          		<input type="text" placeholder="Search" class="innersearchbar">
+								    <li  ng-repeat= "x in Paymentdetails | filter:SearchText" style="cursor: pointer;">
 								    <div ng-click='PaymentData(x)'>{{x}}</div>
 								    </li>
 								</ul>
@@ -43,7 +43,7 @@
 					          	</button>
 					          	 
 					          	<ul class="dropdown-menu" >
-					          		<input type="text" placeholder="Search">
+					          		<input type="text" placeholder="Search" class="innersearchbar">
 							      	<li ng-repeat= "x in accountdetails | filter:accountfeildtext">
 							      		<div ng-click="accountData(x.value);">{{x.value}}</div>
 							      	</li>
@@ -67,7 +67,7 @@
 					          		<span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 					          		</button>
 					          		<ul class="dropdown-menu" >
-					          			<input type="text" placeholder="Search" style="border-radius:3px; ">
+					          			<input type="text" placeholder="Search" class="innersearchbarsmall">
 								      	<li ng-repeat= "x in dropDownListData | filter:searchText"><div ng-click='frequency(x)'>{{x}}</div>
 								      	</li>
 								    </ul>
@@ -82,7 +82,7 @@
 			          		</div>
 			          		<div id='divtext4'>
 				          		<span>
-				          		<input type='text' data-format="MM/dd/yyyy" ng-readonly="true" id="dateRangePicker" class='divtext4input' ng-model="date" name="myInput3" ng-required='true'></span>
+				          		<input type='text' data-format="MM/dd/yyyy" ng-readonly="true" id="dateRangePicker" class='divtext4input' ng-model='date' name="myInput3" ng-required='true'></span>
 				          		<span class="fa fa-calendar-o calender-icon" aria-hidden="true">
 				          		</span>
 				          		<h5 class="errormessage" ng-if="!userform.myInput3.$valid">Please fill out this field</h5>
@@ -100,7 +100,7 @@
 			          				<button id='divtext5button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 			          				</button>
 				          			<ul class="dropdown-menu" >
-				          				<input type="text" placeholder="Search">
+				          				<input type="text" placeholder="Search" class="innersearchbarsmall">
 							      		<li ng-repeat= "x in paymentTimingdetails | filter:paymentfieldtext">
 							      		<div ng-click='paymentTimmingData(x.value)'>{{x.value}}</div>
 							      		</li>
@@ -123,7 +123,7 @@
 		          					<button id='divtext5button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 		          					</button>
 			          				<ul class="dropdown-menu" >
-			          					<input type="text" placeholder="Search">
+			          					<input type="text" placeholder="Search" class="innersearchbarsmall">
 								      	<li ng-repeat= "y in paymentdueondetails|filter:PaymentDueon">
 								      		<div ng-click='PayamentDueOn(y.value)'>{{y.value}}</div>
 								      	</li>
@@ -139,11 +139,11 @@
 		          			</div>
 		          			<div class="dropdown">
 		          				<div id="divtext6">
-			          				<span><input type='text' placeholder='Select' name="myInput" ng-model='paymentdueData' id='divtext6input' name="myInput6" ng-required='true'></span>
+			          				<span><input type='text' placeholder='Select' name="myInput6" ng-model='paymentdueData' id='divtext6input' name="myInput6" ng-required='true'></span>
 			          				<button id='divtext5button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 			          				</button>
 			          				<ul class="dropdown-menu" >
-				          				<input type="text" placeholder="Search">
+				          				<input type="text" placeholder="Search" class="innersearchbarsmall">
 								      	<li ng-repeat= "y in paymentDueDay">
 								      	<div ng-click='paymentDueData(y.value)'>{{y.value}}</div>
 								      	</li>
@@ -183,8 +183,8 @@
 			        		<div>Information</div>
 			        	</div>
 			        	<div class="col-md-2 col-sm-2">
-					    	<span id='params'>
-					    	<button id='paramsbutton' data-toggle="modal" data-target="#myModal"><i class="fa fa-calendar-o" aria-hidden="true"></i></button>
+					    	<span id='paramsa'>
+					    	<i class="fa fa-calendar-o" aria-hidden="true"></i>
 					    	</span>
 					    	<div>Parameters</div>
 			        	</div>

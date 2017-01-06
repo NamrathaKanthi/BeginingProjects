@@ -20,7 +20,7 @@
 				          			<span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 				          			</button>
 						          	 <ul class="dropdown-menu" >
-						          		<input type="text" placeholder="Search">
+						          		<input type="text" placeholder="Search" class="innersearchbar">
 									    <li ng-repeat= "x in growthType | filter:Growthdata">
 									    <div ng-click='GrowthData(x.value)'>{{x.value}}</div>
 									    </li>
@@ -33,7 +33,7 @@
 			          			<p><b>Fixed Growth</b></p>
 			          		</div>
 					          	<div id="divtext9"> 
-					          		<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext9input'>
+					          		<span><input type='text' placeholder='0' ng-model="Fixedgrowthdata" id='divtext9input'>
 					          		</span>
 			          			</div>
 			          	</div>
@@ -44,7 +44,7 @@
 	          				<p><b>Number of Schedules</b></p>
 	          			</div>
 			          	<div id="divtext10"> 
-			          		<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext10input'>
+			          		<span><input type='text' placeholder='0' ng-model="Numberofschedules" id='divtext10input'>
 			          		</span>
 	          			</div>
 	          		</div>
@@ -66,15 +66,15 @@
 	          			</div>
 	          			<div class="dropdown">
 				          	<div id="divtext12"> 
-				          		<span><input type='text' placeholder='0' ng-model="SearchText2" id='divtext12input'>
+				          		<span><input type='text' placeholder='0' ng-model="chargeamountbasis" id='divtext12input'>
 				          		</span>
 				          		<button id='divtext12button' class="dropdown-toggle" data-toggle="dropdown">
 				          			<span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
 				          		</button>
 					          	<ul class="dropdown-menu" >
-					          		<input type="text" placeholder="Search">
-								    <li ng-repeat= "x in chargeAmountBasisdetails | filter:SearchText2">
-								    <div ng-click='PaymentData(x.value)'>{{x.value}}</div>
+					          		<input type="text" placeholder="Search" class="innersearchbar">
+								    <li ng-repeat= "x in chargeAmountBasisdetails | filter:chargeamountbasis">
+								    <div ng-click='chargeamountData(x.value)'>{{x.value}}</div>
 								    </li>
 								</ul>
 				          	</div>
@@ -86,7 +86,7 @@
 	          			</div>
 	          		
 		          		<div id="divtext13"> 
-		          			<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext13input'>
+		          			<span><input type='text' placeholder='0' ng-model="contractrentable" id='divtext13input'>
 		          			</span>
 		          		</div>
 		          		<span>Square-feet</span>
@@ -96,7 +96,7 @@
 	          				<p><b>Amount Per Basis</b></p>
 	          			</div>
 			          	<div id="divtext14"> 
-			          		<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext14input'>
+			          		<span><input type='text' placeholder='0' ng-model="amountperbasis" id='divtext14input'>
 			          		</span>
 	          			</div>
 	          		</div>
@@ -105,18 +105,18 @@
 	        <div class="modal-footer">
 				<div class="row">
 		        	<div class="col-md-2 col-sm-2">
-		        		<span id='info'><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+		        		<span id='info1'><i class="fa fa-info-circle" aria-hidden="true"></i></span>
 		        		<div>Information</div>
 		        	</div>
 		        	<div class="col-md-2 col-sm-2">
-			    		<span id='params'><button id='paramsbutton' data-toggle="modal" data-target="#myModal"><i class="fa fa-calendar-o" aria-hidden="true"></i></button></span>
+			    		<span id='params'><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
 				    	<div>Parameters</div>
 		        	</div>
 		        	<div class="col-md-4 col-sm-4">
 		        		
 		        	</div>
 		        	<div class="col-md-2 col-sm-2">
-		        		<button style="background-color: transparent;border: 1px solid #cfcfcf;" ng-click='save()'>Save</button>
+		        		<button id='savebutton' data-dismiss="modal" ng-click='save()'>Save</button>
 		        	</div>
 		        	<div class="col-md-2 col-sm-2">
 		        		<span id='arrowbutton'><button id='arrowbutton2' ng-click='close()' data-toggle="modal" data-target="#myModal1"><i class="fa fa-angle-left" aria-hidden="true"></i></button></span>

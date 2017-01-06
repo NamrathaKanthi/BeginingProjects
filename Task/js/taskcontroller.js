@@ -9,7 +9,7 @@
  angular
     .module('TaskApp')
     .controller('taskCtrl',['$scope','TaskService','taskFactory',function($scope,TaskService,taskFactory){
-
+       $scope.showtable1=false;
     	function init() {
     		$('#dateRangePicker')
         		.datepicker({
@@ -17,8 +17,6 @@
         		})
 			};
     	init();
-
-    	taskFactory.storedetails();
 
     	TaskService.getjson('./jsons/c_frequecyType.json').then (function(data){
 		$scope.frequencydetails = data;
@@ -67,10 +65,14 @@
 		$scope.paymentDueDay = data.result;
 		console.log($scope.paymentDueDay);
 	});
+
+   	 	$scope.showingtable = function(){
+		$scope.showtable1 = true;	
+		}
 		$scope.accountData=function(data){
 			$scope.accountfeildtext=data;
 		}
-
+		//$scope.accountfeildtext='';
 		$scope.frequency=function(data){
 			$scope.searchText=data;
 		}
@@ -79,6 +81,7 @@
 		}
 		$scope.PaymentData=function(data){
 			$scope.SearchText=data;
+			console.log($scope.SearchText);
 				}
 		$scope.paymentDueData=function(data){
 			$scope.paymentdueData=data;
@@ -90,26 +93,73 @@
 			$scope.PaymentDueon=data;
 		}
 
-		$scope.PaymentData=function(data){
-			$scope.SearchText2=data;
+		$scope.chargeamountData=function(data){
+			$scope.chargeamountbasis=data;
 		}
 
-		$scope.show=function(){
+		// $scope.modify = function(tableData){
+		// 	// $scope.details = $scope.Firstmodal.angular.cop 
+		// };
+		
+		// $scope.update = function(tableData){
+		// 	$scope.modifyField = false;
+		// 	$scope.viewField = false;
+		// };
 
-			$scope.isChecked = true;
-    			return true
-			console.log("hello");
+		// $scope.deletedata = function(user){
+		// 	console.log(user);
+		// 	var index = $rootScope.EmployeeList.indexOf(user);
+		// 	$rootScope.EmployeeList.splice(index,1);   
+			
+		// }	
+		//$scope.Firstmodal=[];
+		$scope.show=function(){
+			$scope.Firstmodal=taskFactory.updateInfo('info-1',{paymentinfo:$scope.SearchText,Accounttype:$scope.accountfeildtext,frequency:$scope.searchText,periodStartdate:$scope.date,paymenttiming:$scope.paymentfieldtext,paymentdueon:$scope.PaymentDueon,paymentdueday:$scope.paymentdueData});
+			// $scope.isChecked = true;
+   //  			return true
+			// console.log("hello");
 			$scope.open =true;
-			//$scope.firstmodel=false;
-			 
+			$("#myModal").modal('hide');
 		}
 
 		$scope.close=function(){
 			$scope.open=false;
-			//$scope.firstmodel=true;
 
 		}
+		$scope.Details = [];
+		$scope.save=function(){
+			// taskFactory.updateInfo('info-2',{growthtype:$scope.Growthdata,fixedgrowth:$scope.Fixedgrowthdata,numberofschedules:$scope.Numberofschedules,chargeamountbasis:$scope.chargeamountbasis,contractrentable:$scope.contractrentable,Amountperbasis:$scope.amountperbasis,paymentdueday:$scope.paymentdueData});
+			// $scope.Details.push(taskFactory.getInfo('info-1'));
+			// console.log($scope.Details);
+			var flag = false;
+			$scope.open=false;
+			$("#myModal1").modal('hide');
+			$("#myModal").modal('hide');
 
+			for(var i=0;i<$scope.Details.length;i++){
+				if($scope.SearchText == $scope.Details[i].paymentinfo){
+					flag = true;
+				}
+			}
+			if(flag){
+				for(var i=0;i<$scope.Details.length;i++){
+					if($scope.SearchText == $scope.Details[i].paymentinfo){
+						$scope.Details[i].details.push($scope.SearchText);
+					}
+				}
+			}else{
+				$scope.newobject ={};
+				$scope.newobject.paymentinfo = $scope.SearchText;
+				$scope.newobject.details = [];
+				$scope.newobject.details.push(taskFactory.getInfo('info-1'));
+				$scope.Details.push($scope.newobject);
+				console.log($scope.newobject);
+				console.log($scope.Details);
+			}
+
+
+
+		}
 		
 
 

@@ -5,7 +5,16 @@
 	.directive('firstmodel',function(){
 		return{
 			restrict:"E",
-			templateUrl:"html/firstmodal.html"
+			templateUrl:"html/firstmodal.html",
+			controller:function(){
+					function init() {
+		    		$('#dateRangePicker')
+		        		.datepicker({
+		            	format: 'mm/dd/yyyy',  
+		        		})
+					};
+		    	init();	
+				}
 		};
 	});
 })();
