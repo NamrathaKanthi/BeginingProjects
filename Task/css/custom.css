@@ -55,13 +55,12 @@
 
 
 #divtext1{
-	/*background-color: #e5e5e5;*/
 	border: 1px solid #cfcfcf;
-	border-radius: 3px; /*-------radius of curve ness of border---------*/
+	border-radius: 3px; 
 	color: #5a5656;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
 	font-size: 14px;
-	height:35px; /*--height of box--*/
+	height:35px; 
 	width:300px;
 	margin-top: 10px;
 }
@@ -69,7 +68,8 @@
 #divtext1input{
 	border: none;
 	width:250px;
-	height: 25px;
+	height:30px;
+	padding-left:20px;
 }
 
 #divtext1button{
@@ -92,7 +92,8 @@
 #divtext2input{
 	border: none;
 	width:250px;
-	height: 25px;
+	height: 30px;
+	padding-left:20px;
 }
 
 #divtext2button{
@@ -120,11 +121,13 @@
 #divtext3input{
 	border: none;
 	width:150px;
-	height: 25px;
+	height:30px;
+	padding-left:20px;
 }
 
 #divtext3button{
-	background-color: transparent;border: none;
+	background-color: transparent;
+	border: none;
 }
 
 .thirddiv{
@@ -139,13 +142,16 @@
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
 	font-size: 14px;
 	height:35px; 
-	width: 175px;
+	width: 190px;
 	margin-top: 10px;
 }
 
-#divtext4input{
+.divtext4input{
 	border: none;
-	height: 25px;cursor: pointer;
+	height: 30px;
+	cursor: pointer;
+	width:150px;
+	padding-left:20px;
 }
 
 #thirddiv2{
@@ -163,14 +169,19 @@
 }
 
 #divtext5input{
-	border: none;width:150px;height: 25px;
+	border: none;
+	width:150px;
+	height:30px;
+	padding-left:20px;
 }
 #divtext5button{
-	background-color: transparent;border: none;
+	background-color: transparent;
+	border: none;
 }
 
 .fourthdiv{
-	margin-left: 15px;margin-top: 35px;
+	margin-left: 15px;
+	margin-top: 35px;
 }
 #divtext5{
 	
@@ -184,15 +195,20 @@
 	margin-top: 10px;
 }
 #divtext5input{
-	border: none;width:150px;height: 25px;
+	border: none;
+	width:150px;
+	height:30px;
+	padding-left:20px;
 }
 
 #divtext5button{
-	background-color: transparent;border: none;
+	background-color: transparent;
+	border: none;
 }
 
 .fouthdiv2{
-	margin-left:40px;margin-top: 35px;
+	margin-left:40px;
+	margin-top: 35px;
 }
 #divtext6{
 	
@@ -207,11 +223,15 @@
 }
 
 #divtext6input{
-	border: none;width:150px;height: 25px;
+	border: none;
+	width:150px;
+	height:30px;
+	padding-left:5px !important;
 }
 
 #divtext6button{
-	background-color: transparent;border: none;
+	background-color: transparent;
+	border: none;
 }
 #divtext7{
 	
@@ -225,44 +245,230 @@
 	margin-top: 10px;
 }
 .fifthdiv{
-	margin-left:56px;margin-top: 35px;
+	margin-left:56px;
+	margin-top: 35px;
 }
 #divtext7input{
-	border: none;width:150px;height: 25px;
+	border: none;
+	width:150px;
+	height:30px;
+	padding-left:20px;
 }
 
 #divtext7button{
-	background-color: transparent;border: none;
+	background-color: transparent;
+	border: none;
 }
+
+#divtext8{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width:300px;
+	margin-top: 10px;
+}
+
+.sixthdiv{
+	margin-top: 35px;
+}
+
+#divtext8input{
+	border: none;
+	width:250px;
+	height:30px;
+	padding-left:20px;
+}
+
+#divtext8button{
+	background-color: transparent;
+	border: none;
+}
+
+#divtext9{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width:300px;
+	margin-top: 10px;
+}
+
+#divtext9input{
+	border: none;
+	width:250px;
+	height:30px;
+	padding-left:20px;
+}
+
+#divtext9button{
+	background-color: transparent;
+	border: none;
+}
+
+#divtext10{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width:300px;
+	margin-top: 10px;
+}
+
+#divtext10input{
+	border: none;
+	width:250px;
+	height:30px;
+	padding-left:20px;
+}
+
+#divtext10button{
+	background-color: transparent;
+	border: none;
+}
+
+#divtext11{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width:300px;
+	margin-top: 10px;
+}
+
+#divtext11input{
+	border: none;
+	width:250px;
+	height:30px;
+	padding-left:20px;
+}
+
+#divtext11button{
+	background-color: transparent;
+	border: none;
+}
+
+#divtext12{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width: 190px;
+	margin-top: 10px;
+}
+
+#divtext12input{
+	border: none;
+	width:150px;
+	height:30px;
+	padding-left:20px;
+}
+
+#divtext12button{
+	background-color: transparent;
+	border: none;
+}
+
+#divtext13{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width: 100px;
+	margin-top: 10px;
+}
+
+#divtext13input{
+	border: none;
+	width:50px;
+	height:30px;
+	padding-left:20px;
+}
+
+#divtext14{
+	
+	border: 1px solid #cfcfcf;
+	border-radius: 3px; 
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+	font-size: 14px;
+	height:35px; 
+	width: 190px;
+	margin-top: 10px;
+}
+
+#divtext14input{
+	border: none;
+	width:110px;
+	height:30px;
+	padding-left:20px;
+}
+
+#divtext14button{
+	background-color: transparent;
+	border: none;
+}
+
 #checkbox{
-	margin-left: 15px;margin-top:62px;
+	margin-left: 15px;
+	margin-top:62px;
 }
 #checkboxdiv{
-	margin-left: 15px;margin-top: 45px;
+	margin-left: 15px;
+	margin-top: 45px;
 }
 
 #descdiv{
-	height: 56px;width:650px;border: 1px solid #cfcfcf;border-radius:5px;
+	height: 56px;
+	width:650px;
+	border: 1px solid #cfcfcf;
+	border-radius:5px;
 }
 
 #info{
-	margin-right:30px;font-size:20px;
+	margin-right:30px;
+	font-size:20px;
 }
 
 #params{
-	margin-right:20px;font-size: 20px;
+	margin-right:20px;
+	font-size: 20px;
 }
 
 #paramsbutton{
-	background-color: transparent;border: none;
+	background-color: transparent;
+	border: none;
 }
 
 #arrowbutton{
-	margin-right:30px;font-size:20px;
+	margin-right:30px;
+	font-size:20px;
 }
 
 #arrowbutton2{
-	background-color: transparent;border:1px solid #cfcfcf;border-radius: 3px;
+	background-color: transparent;
+	border:1px solid #cfcfcf;
+	border-radius: 3px;
+	width:60px;
+	height: 60px;
 }
 .asetrick{
 	color:#fa1323;
@@ -281,7 +487,16 @@
 	width:700px;
 }
 
-#modalbody{
+#modalbody1{
 	height:450px;
 	overflow-y:scroll !important;
+}
+
+#modalbody2{
+	height: 450px;
+	overflow-y:scroll !important; 
+}
+
+.errormessage{
+	color: #882738;
 }

@@ -1,14 +1,14 @@
 (function() {
 	'use strict';
 	angular
-	.module('TaskApp',['ui.router']);
+	.module('TaskApp',['ngMessages']);
 })();
 
 (function(){
  'use strict';
  angular
     .module('TaskApp')
-    .controller('taskCtrl',['$scope','TaskService',function($scope,TaskService){
+    .controller('taskCtrl',['$scope','TaskService','taskFactory',function($scope,TaskService,taskFactory){
 
     	function init() {
     		$('#dateRangePicker')
@@ -17,6 +17,8 @@
         		})
 			};
     	init();
+
+    	taskFactory.storedetails();
 
     	TaskService.getjson('./jsons/c_frequecyType.json').then (function(data){
 		$scope.frequencydetails = data;
@@ -65,26 +67,53 @@
 		$scope.paymentDueDay = data.result;
 		console.log($scope.paymentDueDay);
 	});
-$scope.accountData=function(data){
-	$scope.accountfeildtext=data;
-}
-$scope.paymentTimmingData=function(data){
-	$scope.paymentfieldtext=data;
-}
-$scope.PaymentData=function(data){
-			$scope.SearchText=data;
+		$scope.accountData=function(data){
+			$scope.accountfeildtext=data;
 		}
 
-
-
+		$scope.frequency=function(data){
+			$scope.searchText=data;
+		}
+		$scope.paymentTimmingData=function(data){
+			$scope.paymentfieldtext=data;
+		}
+		$scope.PaymentData=function(data){
+			$scope.SearchText=data;
+				}
 		$scope.paymentDueData=function(data){
 			$scope.paymentdueData=data;
 		}
-
+		$scope.GrowthData=function(data){
+			$scope.Growthdata=data;
+		}
 		$scope.PayamentDueOn=function(data){
 			$scope.PaymentDueon=data;
 		}
 
+		$scope.PaymentData=function(data){
+			$scope.SearchText2=data;
+		}
+
+		$scope.show=function(){
+
+			$scope.isChecked = true;
+    			return true
+			console.log("hello");
+			$scope.open =true;
+			//$scope.firstmodel=false;
+			 
+		}
+
+		$scope.close=function(){
+			$scope.open=false;
+			//$scope.firstmodel=true;
+
+		}
+
+		
+
 
     }]);
 })();
+
+

@@ -1,0 +1,131 @@
+<div ng-show='open'>
+	<div class="modal fade" id="myModal1" role="dialog">
+	    <div class="modal-dialog-lg">
+	        <div class="modal-content" id='modal'>
+	        	<div class="modal-header">
+	          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	          		<h4 class="modal-title">Payment Parameters</h4>
+	        	</div>
+	        	<div class="modal-body" id='modalbody2'>
+	          		<div class="row">
+	          			<div class="col-md-6 col-sm-6">
+		          			<div>
+		          				<p><b>Growth Type</b></p>
+		          			</div>
+	          				<div class="dropdown">
+				          		<div id="divtext8"> 
+				          			<span><input type='text' placeholder='Fixed' ng-model="Growthdata" id='divtext8input'>
+				          			</span>
+				          			<button id='divtext8button' class="dropdown-toggle" data-toggle="dropdown">
+				          			<span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+				          			</button>
+						          	 <ul class="dropdown-menu" >
+						          		<input type="text" placeholder="Search">
+									    <li ng-repeat= "x in growthType | filter:Growthdata">
+									    <div ng-click='GrowthData(x.value)'>{{x.value}}</div>
+									    </li>
+									</ul>
+				          		</div>
+		          			</div>
+	          			</div>
+	          			<div class="col-md-6 col-sm-6">
+			          		<div>
+			          			<p><b>Fixed Growth</b></p>
+			          		</div>
+					          	<div id="divtext9"> 
+					          		<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext9input'>
+					          		</span>
+			          			</div>
+			          	</div>
+			        </div>
+	          	<div class="row sixthdiv">
+	          		<div class="col-md-6 col-sm-6">
+	          			<div>
+	          				<p><b>Number of Schedules</b></p>
+	          			</div>
+			          	<div id="divtext10"> 
+			          		<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext10input'>
+			          		</span>
+	          			</div>
+	          		</div>
+	          		<div class="col-md-6 col-sm-6">
+	          			<div>
+	          				<p><b>Adjust Every(X)Months</b></p>
+	          			</div>
+			          	<div id="divtext11"> 
+			          		<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext11input'>
+			          		</span>
+	          			</div>
+	          		</div>
+	          	</div>
+	          	<div class="row sixthdiv">
+	          		<div class="col-md-4 col-sm-4">
+	          			<div>
+	          				<p><b>Charge Amount Basis</b></p>
+	          				<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
+	          			</div>
+	          			<div class="dropdown">
+				          	<div id="divtext12"> 
+				          		<span><input type='text' placeholder='0' ng-model="SearchText2" id='divtext12input'>
+				          		</span>
+				          		<button id='divtext12button' class="dropdown-toggle" data-toggle="dropdown">
+				          			<span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+				          		</button>
+					          	<ul class="dropdown-menu" >
+					          		<input type="text" placeholder="Search">
+								    <li ng-repeat= "x in chargeAmountBasisdetails | filter:SearchText2">
+								    <div ng-click='PaymentData(x.value)'>{{x.value}}</div>
+								    </li>
+								</ul>
+				          	</div>
+		          		</div>
+	          		</div>
+	          		<div class="col-md-4 col-sm-4">
+	          			<div>
+	          				<p><b>Contract Rentable</b></p>
+	          			</div>
+	          		
+		          		<div id="divtext13"> 
+		          			<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext13input'>
+		          			</span>
+		          		</div>
+		          		<span>Square-feet</span>
+	          		</div>
+	          		<div class="col-md-4 col-sm-4">
+	          			<div>
+	          				<p><b>Amount Per Basis</b></p>
+	          			</div>
+			          	<div id="divtext14"> 
+			          		<span><input type='text' placeholder='0' ng-model="SearchText" id='divtext14input'>
+			          		</span>
+	          			</div>
+	          		</div>
+	          	</div>
+	        </div>
+	        <div class="modal-footer">
+				<div class="row">
+		        	<div class="col-md-2 col-sm-2">
+		        		<span id='info'><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+		        		<div>Information</div>
+		        	</div>
+		        	<div class="col-md-2 col-sm-2">
+			    		<span id='params'><button id='paramsbutton' data-toggle="modal" data-target="#myModal"><i class="fa fa-calendar-o" aria-hidden="true"></i></button></span>
+				    	<div>Parameters</div>
+		        	</div>
+		        	<div class="col-md-4 col-sm-4">
+		        		
+		        	</div>
+		        	<div class="col-md-2 col-sm-2">
+		        		<button style="background-color: transparent;border: 1px solid #cfcfcf;" ng-click='save()'>Save</button>
+		        	</div>
+		        	<div class="col-md-2 col-sm-2">
+		        		<span id='arrowbutton'><button id='arrowbutton2' ng-click='close()' data-toggle="modal" data-target="#myModal1"><i class="fa fa-angle-left" aria-hidden="true"></i></button></span>
+		        	</div>
+		          
+		        </div>
+      		</div>
+	</div>
+</div>
+</div>
+</div>
+	

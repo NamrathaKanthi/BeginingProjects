@@ -13,237 +13,70 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
     <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
 
     </script>
 		<script type="text/javascript" src="js/taskcontroller.js"></script>
 		<script type="text/javascript" src='js/taskservice.js'></script>
-		<script type="text/javascript" src='js/taskdatedirective.js'></script>
+		<script type="text/javascript" src='js/taskdirective.js'></script>
+		<script type="text/javascript" src='js/taskfactory.js'></script>
 		<style type="text/css">
 			@import url("css/custom.css");
 		</style>
 </head>
 <body ng-controller='taskCtrl'>
-	<form>
-	<div class=' row main-div form-group'>
-		<div class="col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-2 innerdiv"><b>Frequency Type</b></div>
-		<div class="col-md-2 col-sm-2 innerdiv"><b>Start Date</b></div>
-		<div class="col-md-2 col-sm-2 innerdiv"><b>End Date</b></div>
-		<div class="col-md-2 col-sm-2 innerdiv"><b>Total Cash With Tax</b></div>
-		<div class="col-md-2 col-sm-2 innerdiv"><b>Actions</b></div>
+	<form name='userform' novalidate ng-class="{'error':isChecked}">
+		<div class=' row main-div form-group'>
+			<div class="col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-2 innerdiv"><b>Frequency Type</b></div>
+			<div class="col-md-2 col-sm-2 innerdiv"><b>Start Date</b></div>
+			<div class="col-md-2 col-sm-2 innerdiv"><b>End Date</b></div>
+			<div class="col-md-2 col-sm-2 innerdiv"><b>Total Cash With Tax</b></div>
+			<div class="col-md-2 col-sm-2 innerdiv"><b>Actions</b></div>
 
-	</div>
-	<div class="row secondiv">
-		<div class="col-md-2 col-sm-2 firstrow">
-			<p id='firstp'>Design Fees</p>
 		</div>
-		<div class="col-md-9 col-sm-9">
+		<div class="row secondiv">
+			<div class="col-md-2 col-sm-2 firstrow">
+				<p id='firstp'>Design Fees</p>
+			</div>
+			<div class="col-md-9 col-sm-9">
+				
+			</div>
+			<div class="col-md-1 col-sm-1 thirdrow">
+				<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+			</div>
 			
 		</div>
-		<div class="col-md-1 col-sm-1 thirdrow">
-			<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-		</div>
-		
-	</div>
-	<div class="row secondiv">
-		<div class="col-md-3 col-sm-3 firstrow">
-			<p id='secondp'>Administrative Fees</p>
-		</div>
-		<div class="col-md-8 col-sm-8">
+		<div class="row secondiv">
+			<div class="col-md-3 col-sm-3 firstrow">
+				<p id='secondp'>Administrative Fees</p>
+			</div>
+			<div class="col-md-8 col-sm-8">
+				
+			</div>
+			<div class="col-md-1 col-sm-1 thirdrow">
+				<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+			</div>
 			
 		</div>
-		<div class="col-md-1 col-sm-1 thirdrow">
-			<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+		<div class="row secondiv">
+			<div class="col-md-2 col-sm-2 secondinnerdiv firstrow">
+				<p id='thirdp'>Amortization</p>
+			</div>
+			<div class="col-md-9 col-sm-9 secondinnerdiv">
+				
+			</div>
+			<div class="col-md-1 col-sm-1 secondinnerdiv thirdrow">
+				<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+			</div>
 		</div>
-		
-	</div>
-	<div class="row secondiv">
-		<div class="col-md-2 col-sm-2 secondinnerdiv firstrow">
-			<p id='thirdp'>Amortization</p>
+		<div class="row">
+			<div class="col-md-12 col-sm-12" id='buttondiv'>
+				<button id='button' data-toggle="modal" data-target="#myModal"><span id='plus'><i class="fa fa-plus" aria-hidden="true"></i></span><span id='add'>Add</span></button>
+			</div>
 		</div>
-		<div class="col-md-9 col-sm-9 secondinnerdiv">
-			
-		</div>
-		<div class="col-md-1 col-sm-1 secondinnerdiv thirdrow">
-			<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-		</div>
-		
-	</div>
-	<div class="row">
-		<div class="col-md-12 col-sm-12" id='buttondiv'>
-			<button id='button' data-toggle="modal" data-target="#myModal"><span id='plus'><i class="fa fa-plus" aria-hidden="true"></i></span><span id='add'>Add</span></button>
-		</div>
-		
-	</div>
 
-
-	<div class="modal fade" id="myModal" role="dialog" >
-    <div class="modal-dialog modal-lg">
-    
-      <!-- Modal content-->
-      <div class="modal-content" id='modal'>
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Payment Information</h4>
-        </div>
-        <div class="modal-body" id='modalbody'>
-        	<div class="col-md-6 col-sm-6">
-        	<div>
-        	<span><b>Payment Type</b></span>
-        	<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-        	</div>
-        	<div class="dropdown">
-          <div id="divtext1"> <span><input type='text' placeholder='Select' ng-model="SearchText" id='divtext1input'></span><button id='divtext1button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
-          	<ul class="dropdown-menu" >
-          		<input type="text" placeholder="Search">
-			      <li ng-repeat= "x in Paymentdetails | filter:SearchText">
-			      <div ng-click='PaymentData(x)'>{{x}}</div>
-			      </li>
-			    </ul>
-          </div>
-          </div>
-          </div>
-          <div class="col-md-6 col-sm-6"> 
-          	<div>
-          	<span><b>Accounting Type</b></span>
-          	<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-          	</div>
-          	<div class="dropdown">
-	          	<div id="divtext2"><span><input type='text' id='divtext2input' placeholder='Select' ng-model="accountfeildtext"></span><button id='divtext2button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
-	          	 
-	          	<ul class="dropdown-menu" >
-	          	<input type="text" placeholder="Search" ng-model="accountfeildtext">
-			      <li ng-repeat= "x in accountdetails">
-			      	<div ng-click="accountData(x.value);">{{x.value}}</div>
-			      </li>
-			    </ul>
-			    </select>
-			    </div>
-		    </div>
-          </div>
-          <div class="row">
-          	<div class="col-md-3 col-sm-3 seconddiv">
-          		<div>
-          			<span><b>Frequency</b></span>
-          			<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-          		</div>
-          		<div class="dropdown">
-          		<div id="divtext3"> <span><input type='text' placeholder='Annually' id='divtext3input' ng-model="searchText"></span><button id='divtext3button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
-          		<ul class="dropdown-menu" >
-          		<input type="text" name="" placeholder="Search">
-			      <li ng-repeat= "x in dropDownListData | filter:searchText">{{x}}
-			      </li>
-			    </ul>
-          		</div>
-          		</div>
-          	</div>
-          	<div class="col-md-4 col-sm-4 thirddiv">
-          		<div>
-          			<span><b>Period Start Date</b></span>
-          			<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-          			</div>
-          			<div id='divtext4'><span><input type='text' data-format="MM/dd/yyyy" ng-readonly="true" id="dateRangePicker" id='divtext4input' ><span class="fa fa-calendar-o calender-icon" aria-hidden="true"></span></span></div>
-          		</div>
-          		<div class="col-md-3 col-sm-3" id='thirddiv2'>
-          			<div>
-          				<span><b>Payment Timing</b></span>
-          				<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-          			</div>
-          			<div class="dropdown">
-          			<div id="divtext5"> <span><input type='text' placeholder='Select' id='divtext5input' ng-model='paymentfieldtext'></span><button id='divtext5button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
-          			<ul class="dropdown-menu" >
-          			<input type="text" placeholder="Search">
-			      <li ng-repeat= "x in paymentTimingdetails">
-			      	<div ng-click='paymentTimmingData(x.value)'>{{x.value}}</div>
-			      </li>
-			    </ul>
-          			</div>
-          			</div>
-          		</div>
-          	</div>
-          	<div class="row">
-          		<div class="col-md-3 col-sm-3 fourthdiv" >
-          			<div>
-          				<span><b>Payment Due On</b></span>
-          				<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-          			</div>
-          			<div class="dropdown">
-          			<div id="divtext5"> <span><input type='text' placeholder='Specific Day of Period' ng-model='PaymentDueon' id='divtext5input'></span><button id='divtext5button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
-          				<ul class="dropdown-menu" >
-          				<input type="text" placeholder="Search">
-					      <li ng-repeat= "y in paymentdueondetails">
-					      	<div ng-click='PayamentDueOn(y.value)'>{{y.value}}</div>
-					      </li>
-					    </ul>
-          			 </div>
-          		</div>
-          		</div>
-          		<div class="col-md-3 col-sm-3 fouthdiv2">
-          			<div>
-          				<span><b>Payment Due Day</b></span>
-          				<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-          			</div>
-          			<div class="dropdown">
-          			<div id="divtext6"> <span><input type='text' placeholder='Select' ng-model='paymentdueData' id='divtext6input'></span><button id='divtext5button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
-          				<ul class="dropdown-menu" >
-	          			<input type="text" placeholder="Search">
-					      <li ng-repeat= "y in paymentDueDay">
-					      	<div ng-click='paymentDueData(y.value)'>{{y.value}}</div>
-					      </li>
-				    </ul>
-          			</div>
-          			</div>
-          		</div>
-          		<div class="col-md-4 col-sm-4 fifthdiv">
-          			<div>
-          				<span><b>Accounting Cost Center</b></span>
-          				<span class="asetrick"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-          			</div>
-          			<div class="dropdown">
-          			<div id="divtext7"> <span><input type='text' placeholder='0' id='divtext7input'></span><button id='divtext7button' class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
-          			<ul class="dropdown-menu" >
-			      <li ng-repeat= "y in paymentDueDay">
-			      	{{y.value}}
-			      </li>
-			    </ul>
-          			</div>
-          		</div>
-          		</div>
-          	</div>
-          	<div id='checkbox'>
-          		<input type="checkbox">
-          		<span><b>Option Term Payment</b></span>
-          	</div>
-          	<div id='checkboxdiv'>
-          		<h5><b>Description</b></h5>
-          		<div id='descdiv'>
-          			
-          		</div>
-          	</div>
-          </div>
-          	<div class="modal-footer">
-		        <div class="row">
-		        	<div class="col-md-2 col-sm-2">
-		        	<span id='info'><i class="fa fa-info-circle" aria-hidden="true"></i></span>
-		        	<div>Information</div>
-		        	</div>
-		        	<div class="col-md-2 col-sm-2">
-				    <span id='params'><button id='paramsbutton' data-toggle="modal" data-target="#myModal"><i class="fa fa-calendar-o" aria-hidden="true"></i></button></span>
-				    <div>Parameters</div>
-		        	</div>
-		        	<div class="col-md-6 col-sm-6">
-		        		
-		        	</div>
-		        	<div class="col-md-2 col-sm-2">
-		        		<span id='arrowbutton'><button id='arrowbutton2'><i class="fa fa-angle-right" aria-hidden="true"></i></button></span>
-		        	</div>
-		          
-		        </div>
-      		</div>
-        </div>
-        
-      
-    </div>
-  </div>
+		<firstmodel></firstmodel>
+  		<secondmodel></secondmodel>
 	</form>
 </body>
 </html>
