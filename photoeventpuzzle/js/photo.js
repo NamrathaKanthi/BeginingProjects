@@ -46,10 +46,23 @@ app.controller('photoCtrl',function($scope,$location) {
         for (var index = 0; index < $scope.items.length; index++) {
             var item = $scope.items[index]; 
             if (item.id == id) {
-                $scope.dropped.push(item);
-                $scope.items.splice(index, 1);
+                if($scope.dropped.length == 0 && item.id == 1){
+                    $scope.dropped.push(item);
+                    $scope.items.splice(index, 1);
+                }
+                else{
+                    if($scope.dropped[$scope.dropped.length -1].id == item.id -1){
+                        $scope.dropped.push(item);
+                        console.log($scope.dropped[$scope.dropped.length -1].id);
+                        $scope.items.splice(index, 1);
+                    }
+                }
+                
             }
         }
+        if($scope.items == ""){
+               alert("game complete");
+            }
         console.log($scope.dropped);
         $scope.$apply();
     };

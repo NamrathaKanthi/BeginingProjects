@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+	<head>
+		<title>Div Key Events</title>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script type="text/javascript" src="js/div.js"></script>
+		<style>
+			@import url("css/custom.css");
+		</style>
+	</head>
+	<body ng-controller='MainCtrl'>
+	<h1>Test</h1>
+		<div style="height:300px;width:500px;">
+		<div ng-keydown="myFunct($event)" class="childiv" id="1">
+			<button style="margin-left:50px;margin-top:20px;">1</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="2">
+			<button style="margin-left:50px;margin-top:20px;">2</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="3">
+			<button style="margin-left:50px;margin-top:20px;">3</button>
+		</div>	
+		<div ng-keydown="myFunct($event)" class="childiv" id="4">
+			<button style="margin-left:50px;margin-top:20px;">4</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="5">
+			<button style="margin-left:50px;margin-top:20px;">5</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="6">
+			<button style="margin-left:50px;margin-top:20px;">6</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="7">
+			<button style="margin-left:50px;margin-top:20px;">7</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="8">
+			<button style="margin-left:50px;margin-top:20px;">8</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="9">
+			<button style="margin-left:50px;margin-top:20px;">9</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="10">
+			<button style="margin-left:50px;margin-top:20px;">10</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="11">
+			<button style="margin-left:50px;margin-top:20px;">11</button>
+		</div>
+		<div ng-keydown="myFunct($event)" class="childiv" id="12">
+			<button style="margin-left:50px;margin-top:20px;">12</button>
+		</div>
+		</div>
+	</body>
+</html>

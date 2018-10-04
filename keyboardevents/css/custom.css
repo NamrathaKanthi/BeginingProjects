@@ -1,0 +1,12 @@
+.active{
+	background-color:#E69BB3 !important;
+}
+
+.childiv{
+	height:100px;width:100px;
+	background-color:#FFB296;
+	float:left;
+	margin-top:20px;
+	border:1px solid black;
+	margin-left:10px;
+}

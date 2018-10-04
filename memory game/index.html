@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myGameApp">
+<head>
+	<title>Memmory game</title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+		<style>
+			@import url("bootstrap.css");
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+		<script type="text/javascript" src="js/memorygame.js"></script>
+		
+		<style>
+			@import url("css/custom.css");
+		</style>
+</head>
+<body ng-controller="myGameCtrl">
+	<div ng-class="click" style="border: 1px solid black;">
+		<input type="button" ng-click="click='clickme'" value="clickme!!">
+	</div>
+	
+	<div id="f1_container">
+		<div class="f1_card shadow">
+		  <div class="front face">
+		    <input type="button" ng-click="clickevent()" value="transition">
+		  </div>
+		  <div class="back face center">
+		  </div>
+		</div>
+	</div>
+
+	<div id="f2_container">
+		<div class="f2_card shadow">
+		  <div class="front face">
+		    <input type="button" ng-click="clickevent1()" value="transition">
+		  </div>
+		  <div class="back face center">
+		  </div>
+		</div>
+	</div>
+	
+
+</body>
+</html>
