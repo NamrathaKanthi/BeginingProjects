@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app='myHtmlApp'>
+
+<head>
+	<title>My Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<style>
+		@import url("css/style.css");
+	</style>
+	<script src="js/backend.js"></script>
+
+
+</head>
+
+<body style="background-image: url(images/6.jpg)">
+	<div id="divstyle">
+		<h1>toonjuice</h1>
+		<p id="para">Enjoyment in toon world</p>
+		<div style="height:50px;width:65px;margin-left:470px;" class="mx-auto">
+			<i class="fa fa-facebook" aria-hidden="true"></i>
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			<i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+			<i class="fa fa-google" aria-hidden="true"></i>
+		</div>
+		<h1>09 23 59 38</h1>
+	</div>
+	<div ng-controller='MyHtmlCntrl' class="row" id="photos">
+		<div class="col-md-offset-0 col-md-2">
+			<button ng-click="firstimage()" style="margin-left:10px;">DisneyLand</button>
+			<button ng-click="secondimage()" style="width:90px;margin-left:10px;">Mickey</button><br>
+			<button ng-click="thirdimage()" style="width:90px;margin-left:10px;">Donald</button>
+		</div>
+		<button class="col-md-3 col-sm-2 col-lg-4" style="background-color:transparent;border:none;height:230px;width:265px;" ng-click="firstimage1()"><img style="height:230px;width:265px;" id="myimage1" src="images/15.jpg"></button>
+		<button class="col-md-3 col-sm-2 col-lg-4" style="background-color:transparent;border:none;" ng-click="secondimage2()"><img id="myimage2" src="images/16.jpg"></button>
+		<button class="col-md-3 col-sm-2 col-lg-4" style="background-color:transparent;border:none;" ng-click="thirdimage3()"><img id="myimage3" src="images/19.jpg"></button>
+	</div>
+	<div ng-view></div>
+
+</body>
+
+</html>

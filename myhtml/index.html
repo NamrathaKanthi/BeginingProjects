@@ -1,0 +1,51 @@
+<html ng-app='myHtmlApp'>
+
+<head>
+	<title>
+		My First Page
+	</title>
+	<style>
+		@import url("css/styles.css");
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/backend.js"></script>
+</head>
+
+<body style="background-image: url(images/5.jpg)">
+	<ul class="nav nav-pills nav-justified" style="background-color:LightCoral;height:50px;">
+		<li role="presentation"><a href="#" class="glyphicon glyphicon-home" style="margin-top:5px;font-size:20px;"><span style="margin-left:7px;">Home</span></a></li>
+		<li role="presentation" class="dropdown">
+			<a class="dropdown-toggle  glyphicon glyphicon-education" data-toggle="dropdown" href="#" style="font-size:20px;" role="button"
+			    aria-haspopup="true" aria-expanded="false">
+			  Courses <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li>Maths</li>
+				<li>Science</li>
+				<li>English</li>
+			</ul>
+		</li>
+
+		<li role="presentation"><a href="#" class="glyphicon glyphicon-blackboard" style="margin-top:5px;font-size:20px;"><span style="margin-left:7px;">Presentation </span></a></li>
+	</ul>
+	<h1 style="text-align:center;margin-top:20px;"> DESING YOUR PAGE </h1>
+	<div ng-view></div>
+	<div id="first" style="margin-top:100px;">
+		<div ng-controller="MyHtmlCntrl" class="row">
+			<button type="button" class="btn btn-info btn-lg col-md-offset-1 col-md-3 col-sm-2 col-lg-4" style="height:255px;width:300px;"
+			    data-toggle="modal" data-target="#myModal" ng-click="firstimage()"><img src="images/8.jpg"></button>
+			<button type="button" class="btn btn-info btn-lg col-md-3 col-sm-2 col-lg-4" style="height:255px;width:300px;" data-toggle="modal"
+			    data-target="#myModal2" ng-click="secondimage()"><img src = "images/10.jpg" style="height:230px;"></button>
+			<button type="button" class="btn btn-info btn-lg col-md-3 col-sm-2 col-lg-4" style="height:255px;width:350px;" data-toggle="modal"
+			    data-target="#myModal3" ng-click="thirdimage()"><img src="images/11.jpg" style="height:230px;"></button>
+		</div>
+	</div>
+</body>
+
+</html>
