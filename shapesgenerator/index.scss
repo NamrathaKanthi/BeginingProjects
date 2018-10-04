@@ -1,0 +1,108 @@
+ #cross {
+     background: red;
+     height: 100px;
+     position: relative;
+     width: 20px;
+     margin-left: 77px;
+     animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+ }
+
+ #cross:after {
+     background: red;
+     content: "";
+     height: 20px;
+     left: -40px;
+     position: absolute;
+     top: 40px;
+     width: 100px;
+ }
+
+ .half-circle {
+     width: 100px;
+     height: 100px;
+     background-color: gold;
+     border-bottom-right-radius: 100px;
+     border-top-right-radius: 100px;
+     border: 10px solid gray;
+     border-left: 0;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     animation: pulse 3s ease infinite alternate, Nudge 5s linear infinite alternate;
+ } //  @keyframes pulse {
+ //      0%,
+ //      100% {
+ //          background-color: gold;
+ //      }
+ //      50% {
+ //          background-color: gold;
+ //      }
+ //  }
+ @keyframes Nudge {
+     0%,
+     100% {
+         transform: translate(0, 0);
+     }
+     50% {
+         transform: translate(150px, 0);
+     } //  80% {
+     //      transform: translate(-150px, 0);
+     //  }
+ }
+
+ @keyframes nudge {
+     0%,
+     100% {
+         transform: translate(0, 0);
+     }
+     50% {
+         transform: translate(150px, 0);
+     } //  80% {
+     //      transform: translate(-150px, 0);
+     //  }
+ }
+
+ #diamond-shield {
+     width: 0;
+     height: 0;
+     border: 60px solid transparent; //  border-bottom: 20px solid red;
+     position: relative;
+     top: -50px;
+ }
+
+ #diamond-shield:after {
+     content: '';
+     position: absolute;
+     left: -50px;
+     top: 20px;
+     width: 0;
+     height: 0;
+     border: 60px solid transparent;
+     border-top: 120px solid red;
+ }
+
+ #triangle-Right {
+     width: 0;
+     height: 0;
+     margin-left: 107px;
+     margin-top: 76px;
+     border-top: 30px solid transparent;
+     border-left: 40px solid red;
+     border-bottom: 15px solid transparent;
+ }
+
+ #triangle-left {
+     width: 0;
+     height: 0;
+     border-top: 30px solid transparent;
+     border-right: 50px solid red;
+     border-bottom: 35px solid transparent;
+ }
+
+ #triangle-right {
+     width: 0;
+     height: 0;
+     border-top: 30px solid transparent;
+     border-left: 50px solid red;
+     border-bottom: 35px solid transparent;
+ }
